@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Multisend Transactions Cut Wallet Overhead | Crypto Journal</title>
+<meta name="description" content="Multisend batches share one signature, nonce and transaction envelope, cutting repeated gas and approvals while adding contract and calldata costs.">
+<link rel="canonical" href="https://newscryptoworld.github.io/multisend-cuts-wallet-work-by-sharing-one-transaction-envelope/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#111115">
+<meta name="author" content="Crypto Journal Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Journal">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Multisend Cuts Wallet Work by Sharing One Transaction Envelope">
+<meta property="og:description" content="Multisend batches share one signature, nonce and transaction envelope, cutting repeated gas and approvals while adding contract and calldata costs.">
+<meta property="og:url" content="https://newscryptoworld.github.io/multisend-cuts-wallet-work-by-sharing-one-transaction-envelope/">
+<meta property="og:image" content="https://newscryptoworld.github.io/assets/covers/multisend-cuts-wallet-work-by-sharing-one-transaction-envelope-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Multisend Cuts Wallet Work by Sharing One Transaction Envelope"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Multisend Cuts Wallet Work by Sharing One Transaction Envelope">
+<meta name="twitter:description" content="Multisend batches share one signature, nonce and transaction envelope, cutting repeated gas and approvals while adding contract and calldata costs.">
+<meta property="article:published_time" content="2026-09-09T18:58:37+00:00">
+<meta property="article:section" content="Protocol Economics"><meta property="article:tag" content="Network Activity">
+<meta property="article:tag" content="Protocol Economics">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=Hanken+Grotesk:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/sc9fe16ca3a.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Journal" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://newscryptoworld.github.io/multisend-cuts-wallet-work-by-sharing-one-transaction-envelope/#webpage",
+      "url": "https://newscryptoworld.github.io/multisend-cuts-wallet-work-by-sharing-one-transaction-envelope/",
+      "name": "Multisend Transactions Cut Wallet Overhead | Crypto Journal",
+      "isPartOf": {
+        "@id": "https://newscryptoworld.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://newscryptoworld.github.io/multisend-cuts-wallet-work-by-sharing-one-transaction-envelope/#article",
+      "headline": "Multisend Cuts Wallet Work by Sharing One Transaction Envelope",
+      "isAccessibleForFree": true,
+      "description": "Multisend batches share one signature, nonce and transaction envelope, cutting repeated gas and approvals while adding contract and calldata costs.",
+      "datePublished": "2026-09-09T18:58:37+00:00",
+      "dateModified": "2026-09-09T18:58:37+00:00",
+      "url": "https://newscryptoworld.github.io/multisend-cuts-wallet-work-by-sharing-one-transaction-envelope/",
+      "mainEntityOfPage": {
+        "@id": "https://newscryptoworld.github.io/multisend-cuts-wallet-work-by-sharing-one-transaction-envelope/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://newscryptoworld.github.io/#org",
+        "name": "Crypto Journal Editorial"
+      },
+      "publisher": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "keywords": "Network Activity, Protocol Economics",
+      "articleSection": "Network Activity",
+      "wordCount": 575,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/covers/multisend-cuts-wallet-work-by-sharing-one-transaction-envelope.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://newscryptoworld.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Multisend Cuts Wallet Work by Sharing One Transaction Envelope",
+          "item": "https://newscryptoworld.github.io/multisend-cuts-wallet-work-by-sharing-one-transaction-envelope/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://newscryptoworld.github.io/#org",
+      "name": "Crypto Journal",
+      "url": "https://newscryptoworld.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://newscryptoworld.github.io/#website",
+      "name": "Crypto Journal",
+      "url": "https://newscryptoworld.github.io/",
+      "publisher": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Independent crypto news for researchers and analysts, tracking capital flows, protocol revenue, stablecoin supply and the mechanics of digital markets."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s45e8142" href="#main">Skip to content</a>
+<header class="s83959f2">
+  <div class="sad3b7d3">
+    <a class="s555b590" href="/" aria-label="Crypto Journal home">
+      <span class="s9993777 sb81d385">OD</span>
+      <span class="s89225f1">Crypto Journal</span>
+    </a>
+    <p class="sa7b3451">Crypto flows, networks and market structure</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="sddd4534 sad3b7d3">
+  <header class="saec407e">
+<span class="s9993777">Network Activity</span>    <h1>Multisend Cuts Wallet Work by Sharing One Transaction Envelope</h1>
+<p class="se7724da">Multisend batches share one signature, nonce and transaction envelope, cutting repeated gas and approvals while adding contract and calldata costs.</p>    <div class="sc71e0da se00916d">
+      <span>Crypto Journal Editorial</span>
+      <time datetime="2026-09-09T18:58:37+00:00">Sep 9, 2026</time>
+<span>3 min read</span>    </div>
+  </header>
+  <figure class="s868cef3">
+    <img class="s4ffdddd" src="/assets/covers/multisend-cuts-wallet-work-by-sharing-one-transaction-envelope.jpg" alt="Multisend Cuts Wallet Work by Sharing One Transaction Envelope" width="1200" height="630" fetchpriority="high" decoding="async">
+  </figure>
+  <div class="s823bcb2"><p>Multisend transactions reduce wallet overhead by packing several calls beneath one signature, nonce and transaction envelope; Ethereum’s May 7, 2025 Pectra activation at epoch 364,032 widened that option to opted-in externally owned accounts through EIP-7702. Over a five-payment comparison in any post-Pectra block, five standalone Ethereum transactions carry 105,000 gas of base transaction cost—five times the 21,000-gas floor retained by EIP-7623—before their work begins. One batch pays that envelope once, then pays for calldata and each internal call.</p>
+
+<h2>How does a multisend transaction work?</h2>
+<p>A multisend contract receives an encoded list of destinations, values and call data, then executes those instructions in sequence from the sending account. Smart-contract wallets such as Safe have used this pattern for years; EIP-7702 lets a conventional account delegate execution to wallet code that can offer similar batching without changing its address.</p>
+<p>The wallet therefore signs and broadcasts one outer transaction. Inside it, the contract might send tokens to ten addresses, or combine an approval with a swap. Most implementations make the bundle atomic: if one required call fails, the whole batch reverts. That protects dependent operations, but a bad address or insufficient balance can waste the gas already consumed.</p>
+<ul>
+<li>One signature request replaces repeated wallet prompts.</li>
+<li>One account nonce replaces a chain of separately managed nonces.</li>
+<li>One broadcast and receipt reduce RPC requests and monitoring work.</li>
+<li>One transaction base cost is shared across all successful calls.</li>
+</ul>
+
+<h2>Who saves money when transactions are batched?</h2>
+<p>The sender captures most of the saving because the sender pays for fewer transaction envelopes, signatures and nonce updates. Treasury teams, exchanges, payroll operators and airdrop distributors also gain operationally: fewer submissions mean fewer stuck transactions and replacements. Recipients still receive separate balance changes and token events.</p>
+<p>If a relayer sponsors the batch, the relayer pays validators upfront and may recover the cost from the user in a token or through an application fee. Validators and builders receive fees for the gas actually consumed; batching does not make computation free. It removes duplicated account-level work while preserving the execution work for every transfer.</p>
+
+<h2>Do multisend transactions always reduce gas?</h2>
+<p>No: savings appear only when avoided outer-transaction costs exceed the batch contract’s execution and larger calldata. Each destination can require an internal call, a cold-account access and token logic. A first-time EIP-7702 delegation or smart-wallet setup also adds cost, so a two-call batch can save little while a larger repeated payout usually amortizes overhead more effectively.</p>
+<p>Gas used, not transaction count, is the fair baseline. The batch receipt exposes internal calls and token transfer events; the same receipt-first workflow used to <a href="https://graph.org/How-to-Track-a-Manta-Bridge-Transfer-On-Chain-09-09" rel="noopener">track a Manta Bridge transfer</a> can distinguish a submitted transaction from the movements it triggered.</p>
+
+<h2>Does batching prove more network demand?</h2>
+<p>No: more multisend calls can reflect organic payments, but also exchange sweeps, treasury reshuffling, incentive distributions or airdrop farming. Dollar-denominated transfer value also rises when token prices rise, even if the number of recipients is unchanged. Batch counts alone cannot establish new users, unique economic transfers or demand created by lower fees.</p>
+<p>The verdict is that multisend materially improves wallet utility and cost per repeated action, while changing protocol economics only at the margin and market access only where fixed fees were the barrier. The next confirming number is median gas per successful subcall, measured against comparable standalone calls, alongside the 30-day share of recipients who return without incentives. If those measures fail to improve, batching has simplified the interface more than the network workload.</p></div>
+  <section class="s4fcc6d1" aria-labelledby="od-tags-heading">
+    <h2 class="s566563c" id="od-tags-heading">Filed under</h2>
+    <ul class="sc73e590">
+      <li>Network Activity</li>
+      <li>Protocol Economics</li>
+    </ul>
+  </section>
+  <aside class="sc9902c0" aria-labelledby="od-related-heading">
+    <h2 class="sf241372" id="od-related-heading">Further reporting</h2>
+    <ol class="s9681b09 s68a24fd">
+      <li class="sccfa2ea">
+        <a class="sd124743" href="/pons-drives-robinhood-chain-fees-to-6-million-record/">Pons Drives Robinhood Chain Fees to $6 Million Record</a>
+      </li>
+      <li class="sccfa2ea">
+        <a class="sd124743" href="/a-digital-collectibles-owner-lives-in-contract-state/">A Digital Collectible’s Owner Lives in Contract State</a>
+      </li>
+      <li class="sccfa2ea">
+        <a class="sd124743" href="/secure-element-vs-air-gap-hardware-signings-real-divide/">Secure Element vs Air Gap: Hardware Signing’s Real Divide</a>
+      </li>
+      <li class="sccfa2ea">
+        <a class="sd124743" href="/sparks-150m-move-shows-how-protocol-composability-works/">Spark’s $150M Move Shows How Protocol Composability Works</a>
+      </li>
+    </ol>
+  </aside>
+</article>
+</main>
+
+<footer class="s72ea429">
+  <div class="sad3b7d3">
+    <a class="sedcf2b5" href="/">Crypto Journal</a>
+    <nav class="saa35a97" aria-label="Publication">
+      <ul class="se1aea50">
+        <li><a href="/">Start</a></li>
+        <li><a href="/about/">Masthead</a></li>
+        <li><a href="/privacy/">Privacy &amp; terms</a></li>
+        <li><a href="/archive/">All posts</a></li>
+      </ul>
+    </nav>
+    <nav class="s582cf74" aria-labelledby="od-topics-heading">
+      <h2 class="s566563c" id="od-topics-heading">Coverage</h2>
+      <ul class="se1aea50">
+        <li><a href="/topics/market-structure/">Market Structure</a></li>
+        <li><a href="/topics/protocol-economics/">Protocol Economics</a></li>
+        <li><a href="/topics/network-activity/">Network Activity</a></li>
+        <li><a href="/topics/dex-liquidity-and-trading-costs/">DEX liquidity and trading costs</a></li>
+        <li><a href="/topics/lending-collateral-and-liquidation-risk/">Lending collateral and liquidation risk</a></li>
+        <li><a href="/topics/network-fees-and-validator-economics/">Network fees and validator economics</a></li>
+        <li><a href="/topics/stablecoin-supply/">Stablecoin Supply</a></li>
+        <li><a href="/topics/stablecoin-supply-and-settlement-flows/">Stablecoin supply and settlement flows</a></li>
+      </ul>
+    </nav>
+    <p class="secc5f06">Independent coverage — not investment advice.</p>
+    <p class="s67d358b">© 2026 Crypto Journal</p>
+  </div>
+</footer>
+</body>
+</html>
