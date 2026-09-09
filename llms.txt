@@ -1,0 +1,10 @@
+# Crypto Journal
+
+> Independent crypto news for researchers and analysts, tracking capital flows, protocol revenue, stablecoin supply and the mechanics of digital markets.
+
+Coverage: Capital Flows, Protocol Economics, Stablecoin Supply, Network Activity, Market Structure.
+
+## Key pages
+- [Homepage](https://newscryptoworld.github.io/): latest reporting and analysis.
+- [About](https://newscryptoworld.github.io/about/): editorial scope, independence, sourcing and corrections.
+- [Archive](https://newscryptoworld.github.io/archive/): everything published.
