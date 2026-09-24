@@ -1,6 +1,6 @@
-# Chain News
+# Crypto Daybook
 
-> Chain News is an independent crypto analysis desk: what changed in protocols, markets and regulation, how it compares, and what to watch next.
+> Crypto Daybook reports crypto news: Bitcoin and Ethereum, exchanges, stablecoins, DeFi protocols, regulation, network upgrades and security incidents.
 
 ## Key pages
 - [Homepage](https://newscryptoworld.github.io/): latest reporting and analysis.
