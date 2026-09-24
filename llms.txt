@@ -1,8 +1,6 @@
-# Crypto Journal
+# Chain News
 
-> Independent crypto news for researchers and analysts, tracking capital flows, protocol revenue, stablecoin supply and the mechanics of digital markets.
-
-Coverage: Capital Flows, Protocol Economics, Stablecoin Supply, Network Activity, Market Structure.
+> Chain News is an independent crypto analysis desk: what changed in protocols, markets and regulation, how it compares, and what to watch next.
 
 ## Key pages
 - [Homepage](https://newscryptoworld.github.io/): latest reporting and analysis.
