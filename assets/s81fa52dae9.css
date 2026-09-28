@@ -1,7 +1,7 @@
 :root{
   --bg:#17131b; --surface:#201a27; --elevated:#2a2233;
   --text:#f2eef6; --muted:#a89fb3; --border:#3a3144;
-  --accent:#a98bff; --accent-ink:#140f1c;
+  --accent:#a98bff; --accent-ink:#140f1c; --accent-text:#a98bff;
   --font-display:"Figtree", system-ui, sans-serif;
   --font-body:"Figtree", system-ui, sans-serif;
   --font-mono:"Geist Mono", ui-monospace, Menlo, monospace;
@@ -35,7 +35,7 @@ p{margin:0 0 1.1em}
 .s4cae579 > *{max-width:68ch}
 .s4cae579 h2{font-size:1.55rem; margin-top:1.9em}
 .s4cae579 h3{font-size:1.22rem; margin-top:1.5em}
-.s4cae579 a{color:var(--accent); text-decoration:underline; text-underline-offset:2.5px; text-decoration-thickness:1px}
+.s4cae579 a{color:var(--accent-text, var(--accent)); text-decoration:underline; text-underline-offset:2.5px; text-decoration-thickness:1px}
 .s4cae579 a:hover{text-decoration-thickness:2px}
 .s4cae579 ul,.s4cae579 ol{padding-left:1.3em; margin:0 0 1.2em}
 .s4cae579 li{margin:.35em 0}

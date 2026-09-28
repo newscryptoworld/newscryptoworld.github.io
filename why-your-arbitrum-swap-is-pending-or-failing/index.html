@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arbitrum Swap Pending or Failing: Causes and Fixes</title>
+<meta name="description" content="An Arbitrum swap can wait before the network accepts it or revert after execution; check its nonce, gas balance, slippage and route to find the cause.">
+<link rel="canonical" href="https://newscryptoworld.github.io/why-your-arbitrum-swap-is-pending-or-failing/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#17131b">
+<meta name="author" content="Crypto Record Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Record">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why Your Arbitrum Swap Is Pending or Failing">
+<meta property="og:description" content="An Arbitrum swap can wait before the network accepts it or revert after execution; check its nonce, gas balance, slippage and route to find the cause.">
+<meta property="og:url" content="https://newscryptoworld.github.io/why-your-arbitrum-swap-is-pending-or-failing/">
+<meta property="og:image" content="https://newscryptoworld.github.io/assets/covers/why-your-arbitrum-swap-is-pending-or-failing-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why Your Arbitrum Swap Is Pending or Failing"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why Your Arbitrum Swap Is Pending or Failing">
+<meta name="twitter:description" content="An Arbitrum swap can wait before the network accepts it or revert after execution; check its nonce, gas balance, slippage and route to find the cause.">
+<meta property="article:published_time" content="2026-09-28T12:23:58+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s81fa52dae9.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Record" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://newscryptoworld.github.io/why-your-arbitrum-swap-is-pending-or-failing/#webpage",
+      "url": "https://newscryptoworld.github.io/why-your-arbitrum-swap-is-pending-or-failing/",
+      "name": "Arbitrum Swap Pending or Failing: Causes and Fixes",
+      "isPartOf": {
+        "@id": "https://newscryptoworld.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://newscryptoworld.github.io/why-your-arbitrum-swap-is-pending-or-failing/#article",
+      "headline": "Why Your Arbitrum Swap Is Pending or Failing",
+      "isAccessibleForFree": true,
+      "description": "An Arbitrum swap can wait before the network accepts it or revert after execution; check its nonce, gas balance, slippage and route to find the cause.",
+      "datePublished": "2026-09-28T12:23:58+00:00",
+      "dateModified": "2026-09-28T12:23:58+00:00",
+      "url": "https://newscryptoworld.github.io/why-your-arbitrum-swap-is-pending-or-failing/",
+      "mainEntityOfPage": {
+        "@id": "https://newscryptoworld.github.io/why-your-arbitrum-swap-is-pending-or-failing/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "wordCount": 611,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/covers/why-your-arbitrum-swap-is-pending-or-failing.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://newscryptoworld.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why Your Arbitrum Swap Is Pending or Failing",
+          "item": "https://newscryptoworld.github.io/why-your-arbitrum-swap-is-pending-or-failing/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://newscryptoworld.github.io/#org",
+      "name": "Crypto Record",
+      "url": "https://newscryptoworld.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://newscryptoworld.github.io/#website",
+      "name": "Crypto Record",
+      "url": "https://newscryptoworld.github.io/",
+      "publisher": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Record reports news on Bitcoin, Ethereum, Solana, DeFi protocols, exchanges, stablecoins, regulation and network upgrades across the crypto market."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s9e43d8a" href="#main">Skip to content</a>
+<header class="s9fcc171">
+  <div class="s1a1f8a9 s8459af5">
+    <a class="s9575b21" href="/">Crypto Record</a>
+    <p class="s888dd1a">Crypto news across every chain</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="s1a1f8a9 s48acf5d">
+  <article class="sd341993">
+    <div class="s8e49568">
+      <p class="s9a9fd2c"><span class="s510c5e3">2026-09-28 12:23 UTC</span><span class="s73262ce">835813</span></p>
+      <h1 class="s3543549">Why Your Arbitrum Swap Is Pending or Failing</h1>
+<p class="s09cc4bc">An Arbitrum swap can wait before the network accepts it or revert after execution; check its nonce, gas balance, slippage and route to find the cause.</p>      <p class="s36b51e3"><span class="s06f7245">Crypto Record Editorial</span><time datetime="2026-09-28T12:23:58+00:00">Sep 28, 2026</time><span>3 min read</span></p>
+    </div>
+    <figure class="sad7290f"><img fetchpriority="high" class="s6e4f956" src="/assets/covers/why-your-arbitrum-swap-is-pending-or-failing.jpg" alt="Why Your Arbitrum Swap Is Pending or Failing"></figure>
+    <div class="s4cae579"><p>An Arbitrum swap can stay pending while it waits to be included, or fail after the network executes it. Your wallet signs a transaction with a nonce and a gas limit; the sequencer orders it, then the swap contract checks the trade against the pool and your limits. Each step can leave a different clue.</p>
+
+<p>Start with the transaction hash in your wallet or a block explorer. If there is no hash, the wallet may not have broadcast the transaction. If the hash exists but has no confirmed result, it is still pending. If the explorer shows a failure, the transaction ran but the swap’s conditions were not met. For a wallet-specific comparison, see <a href="https://smoggy-walker-4e8.notion.site/Which-Arbswap-Service-Should-I-Use-From-My-Wallet-3e9018e2823780c3b1aafaa873e72118" rel="noopener">which Arbswap service fits your wallet</a>. The service can affect how a trade is routed, but the transaction status still tells you whether it reached the chain.</p>
+
+<h2>Why is my Arbitrum swap still pending?</h2>
+
+<p>A pending swap usually means the signed transaction has not yet been included, or your wallet is waiting for an earlier transaction from the same account. Transactions use sequential nonces: if nonce 12 is stuck, a later transaction with nonce 13 generally cannot complete first. A wallet may also display a pending status while it waits for the network response.</p>
+
+<p>Open the transaction hash and check its status and nonce. If it is pending, avoid repeatedly submitting the swap; that can create more transactions without resolving the one holding up the queue. Some wallets let you speed up a pending transaction by replacing it with one using the same nonce and a higher fee, or cancel it with a replacement transaction. Follow the wallet’s instructions and confirm the replacement uses the pending nonce. A replacement is a new signed transaction, so check its details before approving it.</p>
+
+<h2>What makes an Arbitrum swap fail?</h2>
+
+<p>A failed swap means the transaction was executed but a check in the swap path reverted it. The network fee can still be charged because the network processed the transaction, even though the token exchange did not complete.</p>
+
+<p>The contract compares the trade’s expected output with its minimum-output limit. If the pool price moves and the output falls below that minimum before execution, the swap reverts. A deadline can also expire while a transaction waits. Other common causes are insufficient token balance, a missing token approval, too little ETH on Arbitrum One to pay gas, or a route with too little liquidity for the trade size.</p>
+
+<ul>
+<li>For a slippage or minimum-output failure, review the quote and consider a smaller trade. Raising slippage can allow a worse price, so change it only when you understand the trade-off.</li>
+<li>For an approval error, check that the correct token and amount are approved for the swap contract.</li>
+<li>For an insufficient-funds error, leave enough ETH on Arbitrum One for the network fee as well as the trade amount.</li>
+<li>For a route or liquidity error, check whether the token pair and trade size can use a viable pool.</li>
+</ul>
+
+<h2>What should I check before retrying?</h2>
+
+<p>Retry only after the first transaction has a confirmed result or you have resolved its pending nonce. Otherwise, two attempts can compete to use the same funds or create a confusing queue. If the first swap failed, check the explorer’s failure details, then adjust only the setting connected to that reason: approval, gas, trade size, route or price limit.</p>
+
+<p>Think of the swap as a parcel moving through a queue before a condition is checked at delivery. A pending status points to the queue; a failed status points to a condition the transaction did not pass. That distinction tells you whether to wait or fix the trade before sending it again.</p></div>
+  </article>
+  <aside class="s27e44d1">
+    <h2 class="sa1db085">Related stories</h2>
+    <ul class="s591294b">
+      <li class="s6b549f7"><a href="/uk-banks-move-tokenised-deposits-across-shared-platform/">UK banks move tokenised deposits across shared platform</a></li>
+    </ul>
+  </aside>
+</div>
+</main>
+
+<footer class="s0ee839a">
+  <div class="s1a1f8a9 s4261b21">
+    <div class="se15a721">
+      <p class="saa1fdb2">Crypto Record</p>
+      <nav class="sd1f22b1" aria-label="Site">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">Masthead</a></li>
+          <li><a href="/privacy/">Privacy &amp; terms</a></li>
+          <li><a href="/archive/">All articles</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="s909df4b">Independent coverage — not investment advice.</p>
+    <p class="s1bc00f0">© 2026 Crypto Record</p>
+  </div>
+</footer>
+</body>
+</html>
