@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://newscryptoworld.github.io/</loc><lastmod>2026-09-29</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://newscryptoworld.github.io/why-bsc-pair-choice-comes-down-to-liquidity-or-recency/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://newscryptoworld.github.io/why-bsc-swap-quotes-change-with-trade-size/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://newscryptoworld.github.io/mantle-withdrawals-fast-inclusion-slower-ethereum-settlement/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://newscryptoworld.github.io/what-token-allowlisting-means-for-l2-integrators/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -36,4 +37,5 @@
 <url><loc>https://newscryptoworld.github.io/privacy/</loc><priority>0.3</priority></url>
 <url><loc>https://newscryptoworld.github.io/page/2/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
 <url><loc>https://newscryptoworld.github.io/page/3/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://newscryptoworld.github.io/page/4/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
 </urlset>
