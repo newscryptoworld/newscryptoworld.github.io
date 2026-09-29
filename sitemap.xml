@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://newscryptoworld.github.io/</loc><lastmod>2026-09-29</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://newscryptoworld.github.io/what-a-chainflip-swap-estimate-actually-tells-you/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://newscryptoworld.github.io/what-a-minimum-does-in-a-wallet-swap/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://newscryptoworld.github.io/what-historical-pool-volume-says-about-fee-potential/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://newscryptoworld.github.io/what-one-solana-swap-actually-costs/</loc><lastmod>2026-09-29</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -25,4 +26,5 @@
 <url><loc>https://newscryptoworld.github.io/about/</loc><priority>0.3</priority></url>
 <url><loc>https://newscryptoworld.github.io/privacy/</loc><priority>0.3</priority></url>
 <url><loc>https://newscryptoworld.github.io/page/2/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://newscryptoworld.github.io/page/3/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
 </urlset>
