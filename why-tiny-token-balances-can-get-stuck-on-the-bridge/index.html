@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tiny token balances: why they won’t bridge back</title>
+<meta name="description" content="A tiny balance can sit on Polygon yet fail to return because bridge routes, gas, minimums and token support all shape whether a withdrawal can proceed.">
+<link rel="canonical" href="https://newscryptoworld.github.io/why-tiny-token-balances-can-get-stuck-on-the-bridge/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#17131b">
+<meta name="author" content="Crypto Record Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Record">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why tiny token balances can get stuck on the bridge">
+<meta property="og:description" content="A tiny balance can sit on Polygon yet fail to return because bridge routes, gas, minimums and token support all shape whether a withdrawal can proceed.">
+<meta property="og:url" content="https://newscryptoworld.github.io/why-tiny-token-balances-can-get-stuck-on-the-bridge/">
+<meta property="og:image" content="https://newscryptoworld.github.io/assets/covers/why-tiny-token-balances-can-get-stuck-on-the-bridge-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why tiny token balances can get stuck on the bridge"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why tiny token balances can get stuck on the bridge">
+<meta name="twitter:description" content="A tiny balance can sit on Polygon yet fail to return because bridge routes, gas, minimums and token support all shape whether a withdrawal can proceed.">
+<meta property="article:published_time" content="2026-09-29T23:37:35+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s81fa52dae9.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Record" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://newscryptoworld.github.io/why-tiny-token-balances-can-get-stuck-on-the-bridge/#webpage",
+      "url": "https://newscryptoworld.github.io/why-tiny-token-balances-can-get-stuck-on-the-bridge/",
+      "name": "Tiny token balances: why they won’t bridge back",
+      "isPartOf": {
+        "@id": "https://newscryptoworld.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://newscryptoworld.github.io/why-tiny-token-balances-can-get-stuck-on-the-bridge/#article",
+      "headline": "Why tiny token balances can get stuck on the bridge",
+      "isAccessibleForFree": true,
+      "description": "A tiny balance can sit on Polygon yet fail to return because bridge routes, gas, minimums and token support all shape whether a withdrawal can proceed.",
+      "datePublished": "2026-09-29T23:37:35+00:00",
+      "dateModified": "2026-09-29T23:37:35+00:00",
+      "url": "https://newscryptoworld.github.io/why-tiny-token-balances-can-get-stuck-on-the-bridge/",
+      "mainEntityOfPage": {
+        "@id": "https://newscryptoworld.github.io/why-tiny-token-balances-can-get-stuck-on-the-bridge/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "wordCount": 563,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/covers/why-tiny-token-balances-can-get-stuck-on-the-bridge.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://newscryptoworld.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why tiny token balances can get stuck on the bridge",
+          "item": "https://newscryptoworld.github.io/why-tiny-token-balances-can-get-stuck-on-the-bridge/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://newscryptoworld.github.io/#org",
+      "name": "Crypto Record",
+      "url": "https://newscryptoworld.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://newscryptoworld.github.io/#website",
+      "name": "Crypto Record",
+      "url": "https://newscryptoworld.github.io/",
+      "publisher": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Record reports news on Bitcoin, Ethereum, Solana, DeFi protocols, exchanges, stablecoins, regulation and network upgrades across the crypto market."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s9e43d8a" href="#main">Skip to content</a>
+<header class="s9fcc171">
+  <div class="s1a1f8a9 s8459af5">
+    <a class="s9575b21" href="/">Crypto Record</a>
+    <p class="s888dd1a">Crypto news across every chain</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="s1a1f8a9 s48acf5d">
+  <article class="sd341993">
+    <div class="s8e49568">
+      <p class="s9a9fd2c"><span class="s510c5e3">2026-09-29 23:37 UTC</span><span class="s73262ce">3dc2e0</span></p>
+      <h1 class="s3543549">Why tiny token balances can get stuck on the bridge</h1>
+<p class="s09cc4bc">A tiny balance can sit on Polygon yet fail to return because bridge routes, gas, minimums and token support all shape whether a withdrawal can proceed.</p>      <p class="s36b51e3"><span class="s06f7245">Crypto Record Editorial</span><time datetime="2026-09-29T23:37:35+00:00">Sep 29, 2026</time><span>3 min read</span></p>
+    </div>
+    <figure class="sad7290f"><img fetchpriority="high" class="s6e4f956" src="/assets/covers/why-tiny-token-balances-can-get-stuck-on-the-bridge.jpg" alt="Why tiny token balances can get stuck on the bridge"></figure>
+    <div class="s4cae579"><p>Tiny token balances often cannot bridge back because the route needs more value, gas or supported token amount than the wallet can provide. A bridge does not move one shared balance between networks. It runs a transaction on the source chain, then uses contracts and network messages to make the corresponding asset available on the destination chain. Each step has rules and costs.</p>
+<p>On Polygon PoS, a withdrawal to Ethereum typically starts by burning the Polygon version of a token. The bridge records that event, and the withdrawal is completed on Ethereum after the required proof and claim steps. The source transaction costs POL; a later claim also needs gas on Ethereum. A small token balance does not pay those fees by itself. For help comparing the available paths, see <a href="https://telegra.ph/Polygon-Bridge-Choosing-the-Right-Route-for-Your-Tokens-09-29" rel="noopener">choosing the right Polygon Bridge route</a>.</p>
+
+<h2>Why can’t I withdraw the full token balance?</h2>
+<p>The wallet may show a balance that the selected route cannot use. A bridge interface can apply a minimum amount, reserve part of the balance for its fee, or reject an amount that rounds down when converted to the token’s smallest units. Some routes also require a token to be supported or mapped on both networks. These conditions vary by bridge and asset; there is no single minimum that applies to every token and route.</p>
+<p>Think of the displayed balance as coins in a parcel and gas as the postage. The parcel can be real, but too small to send under that service’s rules, or the sender may lack the money to post it. The practical checks are:</p>
+<ul>
+<li>Confirm the wallet is connected to the network holding the token.</li>
+<li>Check whether the chosen bridge and route support that exact token.</li>
+<li>Look for a minimum withdrawal, fee, or amount that will arrive after fees.</li>
+<li>Make sure the wallet has the chain’s native gas token for each required transaction.</li>
+</ul>
+
+<h2>Is the balance stuck, or just too small to bridge?</h2>
+<p>Often it is too small for the selected route, rather than trapped in the bridge. A bridge transaction has a fixed execution cost even when the token amount is tiny. The wallet may also need a separate claim transaction on the destination chain. If the token’s market value is lower than the fees, sending it back can cost more than the balance is worth.</p>
+<p>Check the route’s preview and the wallet’s transaction requirements before signing. If the interface rejects the amount, compare another supported route or wait until you have more of the token. If it accepts the withdrawal, keep enough native token for both the source transaction and any destination claim. Do not assume a failed estimate means the token has vanished; check the source-chain transaction history first.</p>
+
+<h2>What is the sensible next step for token dust?</h2>
+<p>For most readers, the sensible choice is to compare the total cost with the token’s value before moving it. If fees consume the balance, leaving it where it is or combining it with a later transfer may make more sense. If you need the funds on the other chain, use a route that supports the asset and shows a viable amount after fees.</p>
+<p>The key distinction is between a token balance and a bridgeable withdrawal. The balance records what the wallet holds. The route decides whether that asset can pass through its contracts, meet its minimums and cover the transactions needed to finish.</p></div>
+  </article>
+  <aside class="s27e44d1">
+    <h2 class="sa1db085">Related stories</h2>
+    <ul class="s591294b">
+      <li class="s6b549f7"><a href="/paying-a-team-on-their-preferred-chains/">Paying a Team on Their Preferred Chains</a></li>
+      <li class="s6b549f7"><a href="/before-using-omnichain-check-message-security-time-and-fees/">Before Using Omnichain, Check Message Security, Time and Fees</a></li>
+      <li class="s6b549f7"><a href="/what-a-cross-chain-bridge-quote-leaves-out/">What a Cross-Chain Bridge Quote Leaves Out</a></li>
+      <li class="s6b549f7"><a href="/what-an-intermediate-asset-means-in-a-treasury-route/">What an Intermediate Asset Means in a Treasury Route</a></li>
+    </ul>
+  </aside>
+</div>
+</main>
+
+<footer class="s0ee839a">
+  <div class="s1a1f8a9 s4261b21">
+    <div class="se15a721">
+      <p class="saa1fdb2">Crypto Record</p>
+      <nav class="sd1f22b1" aria-label="Site">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">Masthead</a></li>
+          <li><a href="/privacy/">Privacy &amp; terms</a></li>
+          <li><a href="/archive/">All articles</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="s909df4b">Independent coverage — not investment advice.</p>
+    <p class="s1bc00f0">© 2026 Crypto Record</p>
+  </div>
+</footer>
+</body>
+</html>
