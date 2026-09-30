@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TRON Swap: Why Treasury Trades Leave Dust | Crypto Record</title>
+<meta name="description" content="TRON swaps can leave small balances when route sizing, token-unit rounding and treasury buffers do not align; tracing the route shows where the remainder sits.">
+<link rel="canonical" href="https://newscryptoworld.github.io/why-treasury-swaps-on-tron-leave-token-dust/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#17131b">
+<meta name="author" content="Crypto Record Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Record">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why Treasury Swaps on TRON Leave Token Dust">
+<meta property="og:description" content="TRON swaps can leave small balances when route sizing, token-unit rounding and treasury buffers do not align; tracing the route shows where the remainder sits.">
+<meta property="og:url" content="https://newscryptoworld.github.io/why-treasury-swaps-on-tron-leave-token-dust/">
+<meta property="og:image" content="https://newscryptoworld.github.io/assets/covers/why-treasury-swaps-on-tron-leave-token-dust-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why Treasury Swaps on TRON Leave Token Dust"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why Treasury Swaps on TRON Leave Token Dust">
+<meta name="twitter:description" content="TRON swaps can leave small balances when route sizing, token-unit rounding and treasury buffers do not align; tracing the route shows where the remainder sits.">
+<meta property="article:published_time" content="2026-09-30T01:19:34+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s81fa52dae9.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Record" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://newscryptoworld.github.io/why-treasury-swaps-on-tron-leave-token-dust/#webpage",
+      "url": "https://newscryptoworld.github.io/why-treasury-swaps-on-tron-leave-token-dust/",
+      "name": "TRON Swap: Why Treasury Trades Leave Dust | Crypto Record",
+      "isPartOf": {
+        "@id": "https://newscryptoworld.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://newscryptoworld.github.io/why-treasury-swaps-on-tron-leave-token-dust/#article",
+      "headline": "Why Treasury Swaps on TRON Leave Token Dust",
+      "isAccessibleForFree": true,
+      "description": "TRON swaps can leave small balances when route sizing, token-unit rounding and treasury buffers do not align; tracing the route shows where the remainder sits.",
+      "datePublished": "2026-09-30T01:19:34+00:00",
+      "dateModified": "2026-09-30T01:19:34+00:00",
+      "url": "https://newscryptoworld.github.io/why-treasury-swaps-on-tron-leave-token-dust/",
+      "mainEntityOfPage": {
+        "@id": "https://newscryptoworld.github.io/why-treasury-swaps-on-tron-leave-token-dust/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "wordCount": 593,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/covers/why-treasury-swaps-on-tron-leave-token-dust.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://newscryptoworld.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why Treasury Swaps on TRON Leave Token Dust",
+          "item": "https://newscryptoworld.github.io/why-treasury-swaps-on-tron-leave-token-dust/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://newscryptoworld.github.io/#org",
+      "name": "Crypto Record",
+      "url": "https://newscryptoworld.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://newscryptoworld.github.io/#website",
+      "name": "Crypto Record",
+      "url": "https://newscryptoworld.github.io/",
+      "publisher": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Record reports news on Bitcoin, Ethereum, Solana, DeFi protocols, exchanges, stablecoins, regulation and network upgrades across the crypto market."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s9e43d8a" href="#main">Skip to content</a>
+<header class="s9fcc171">
+  <div class="s1a1f8a9 s8459af5">
+    <a class="s9575b21" href="/">Crypto Record</a>
+    <p class="s888dd1a">Crypto news across every chain</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="s1a1f8a9 s48acf5d">
+  <article class="sd341993">
+    <div class="s8e49568">
+      <p class="s9a9fd2c"><span class="s510c5e3">2026-09-30 01:19 UTC</span><span class="s73262ce">004d07</span></p>
+      <h1 class="s3543549">Why Treasury Swaps on TRON Leave Token Dust</h1>
+<p class="s09cc4bc">TRON swaps can leave small balances when route sizing, token-unit rounding and treasury buffers do not align; tracing the route shows where the remainder sits.</p>      <p class="s36b51e3"><span class="s06f7245">Crypto Record Editorial</span><time datetime="2026-09-30T01:19:34+00:00">Sep 30, 2026</time><span>3 min read</span></p>
+    </div>
+    <figure class="sad7290f"><img fetchpriority="high" class="s6e4f956" src="/assets/covers/why-treasury-swaps-on-tron-leave-token-dust.jpg" alt="Why Treasury Swaps on TRON Leave Token Dust"></figure>
+    <div class="s4cae579"><p>Treasury trades on TRON can leave dust because the amount budgeted for a swap, the amount a route can use and the wallet’s remaining balance are separate things. A swap starts with an input token in a wallet, passes through one or more liquidity pools, then sends an output token to a recipient. The router follows a specified path and checks that the output meets a minimum; it does not necessarily empty the wallet.</p>
+
+<p>For a treasury, the working balance may include funds reserved for fees, later payments or another trade. The swap amount can also be set before new deposits or earlier transactions change that balance. A fuller <a href="https://shared-amphibian-211.notion.site/TRON-swap-match-the-route-to-your-trade-3eb1db9966fe80f2bf7afe21a3af8448" rel="noopener">tron swap</a> guide can help match a route to a trade; the key point here is that route execution and treasury accounting are distinct steps.</p>
+
+<h2>How does a TRON swap route use treasury tokens?</h2>
+
+<p>A route names the tokens and pools the trade will pass through. If a treasury swaps token A for token C through token B, the router sends A into the first pool, receives B, and uses that amount in the next pool. Each pool sets an exchange rate from its available liquidity, and fees and price impact affect the amount that reaches the final wallet.</p>
+
+<p>Think of the route as a series of connected counters: each one accepts one asset and returns another. On TRON, a router can encode a path, an input amount, a minimum output and a recipient. In an exact-input swap, the contract is told how much input to trade. That instruction alone does not mean every unit of that token held by the treasury is included.</p>
+
+<h2>Why can a treasury wallet still hold dust?</h2>
+
+<p>Dust is a small balance left after a trade or a series of trades. The common causes are simple:</p>
+
+<ul>
+<li><strong>Trade sizing:</strong> the treasury swaps a set amount and retains the rest as a buffer.</li>
+<li><strong>Token units:</strong> contracts handle integer base units, so calculations and route splits can round down to the nearest usable unit.</li>
+<li><strong>Separate transactions:</strong> each trade uses its own input amount; deposits or transfers outside that transaction can leave a remainder.</li>
+<li><strong>Minimums and fees:</strong> a small balance may not justify another swap once network costs, pool fees and price impact are considered.</li>
+</ul>
+
+<p>These balances are not automatically evidence of a failed trade. A successful transaction can consume its specified input and deliver the required output while other tokens remain in the wallet. A treasury that spreads an order across pools or executes it in stages can also finish with small amounts that are uneconomic to trade again.</p>
+
+<h2>How should a treasury decide what to do with the remainder?</h2>
+
+<p>First, compare the wallet balance before and after the transaction with the amount the router was instructed to spend. Then inspect the path, pool steps, output and transaction result. That separates expected leftovers from an execution that used the wrong token, recipient or amount.</p>
+
+<p>For recurring trades, set a minimum balance that can be carried forward, and account for it in the treasury ledger. Sweep it into a later trade only when the value gained is worth the fees and added price impact. If the treasury needs a precise final allocation, calculate the trade size from the desired output and reserve enough input to meet the router’s minimum-output condition.</p>
+
+<p>The practical lesson is that dust is an accounting remainder, not a route by itself. Match the input size to the treasury’s available balance, inspect each pool in the path, and decide in advance whether small leftovers will be held or consolidated later.</p></div>
+  </article>
+  <aside class="s27e44d1">
+    <h2 class="sa1db085">Related stories</h2>
+    <ul class="s591294b">
+      <li class="s6b549f7"><a href="/why-your-xmr-deposit-is-pending-and-when-to-retry/">Why Your XMR Deposit Is Pending and When to Retry</a></li>
+      <li class="s6b549f7"><a href="/how-to-use-zerofi-when-an-xmr-transfer-stalls/">How to Use zerofi When an XMR Transfer Stalls</a></li>
+      <li class="s6b549f7"><a href="/how-to-reconcile-cross-chain-treasury-transfers/">How to Reconcile Cross-Chain Treasury Transfers</a></li>
+      <li class="s6b549f7"><a href="/keep-eth-and-pol-ready-for-polygon-bridge-transfers/">Keep ETH and POL Ready for Polygon Bridge Transfers</a></li>
+    </ul>
+  </aside>
+</div>
+</main>
+
+<footer class="s0ee839a">
+  <div class="s1a1f8a9 s4261b21">
+    <div class="se15a721">
+      <p class="saa1fdb2">Crypto Record</p>
+      <nav class="sd1f22b1" aria-label="Site">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">Masthead</a></li>
+          <li><a href="/privacy/">Privacy &amp; terms</a></li>
+          <li><a href="/archive/">All articles</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="s909df4b">Independent coverage — not investment advice.</p>
+    <p class="s1bc00f0">© 2026 Crypto Record</p>
+  </div>
+</footer>
+</body>
+</html>
