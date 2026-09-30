@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Swap Pending? How Tick Arrays Shape a Trade | Crypto Record</title>
+<meta name="description" content="Tick arrays supply ranges a concentrated-liquidity swap can cross; a bad sequence can fail execution, while network confirmation determines how long it stays pending.">
+<link rel="canonical" href="https://newscryptoworld.github.io/why-a-swap-can-stay-pending-tick-arrays-explained/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#17131b">
+<meta name="author" content="Crypto Record Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Record">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why a Swap Can Stay Pending: Tick Arrays Explained">
+<meta property="og:description" content="Tick arrays supply ranges a concentrated-liquidity swap can cross; a bad sequence can fail execution, while network confirmation determines how long it stays pending.">
+<meta property="og:url" content="https://newscryptoworld.github.io/why-a-swap-can-stay-pending-tick-arrays-explained/">
+<meta property="og:image" content="https://newscryptoworld.github.io/assets/covers/why-a-swap-can-stay-pending-tick-arrays-explained-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why a Swap Can Stay Pending: Tick Arrays Explained"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why a Swap Can Stay Pending: Tick Arrays Explained">
+<meta name="twitter:description" content="Tick arrays supply ranges a concentrated-liquidity swap can cross; a bad sequence can fail execution, while network confirmation determines how long it stays pending.">
+<meta property="article:published_time" content="2026-09-30T10:14:56+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s81fa52dae9.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Record" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://newscryptoworld.github.io/why-a-swap-can-stay-pending-tick-arrays-explained/#webpage",
+      "url": "https://newscryptoworld.github.io/why-a-swap-can-stay-pending-tick-arrays-explained/",
+      "name": "Swap Pending? How Tick Arrays Shape a Trade | Crypto Record",
+      "isPartOf": {
+        "@id": "https://newscryptoworld.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://newscryptoworld.github.io/why-a-swap-can-stay-pending-tick-arrays-explained/#article",
+      "headline": "Why a Swap Can Stay Pending: Tick Arrays Explained",
+      "isAccessibleForFree": true,
+      "description": "Tick arrays supply ranges a concentrated-liquidity swap can cross; a bad sequence can fail execution, while network confirmation determines how long it stays pending.",
+      "datePublished": "2026-09-30T10:14:56+00:00",
+      "dateModified": "2026-09-30T10:14:56+00:00",
+      "url": "https://newscryptoworld.github.io/why-a-swap-can-stay-pending-tick-arrays-explained/",
+      "mainEntityOfPage": {
+        "@id": "https://newscryptoworld.github.io/why-a-swap-can-stay-pending-tick-arrays-explained/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "wordCount": 585,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/covers/why-a-swap-can-stay-pending-tick-arrays-explained.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://newscryptoworld.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why a Swap Can Stay Pending: Tick Arrays Explained",
+          "item": "https://newscryptoworld.github.io/why-a-swap-can-stay-pending-tick-arrays-explained/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://newscryptoworld.github.io/#org",
+      "name": "Crypto Record",
+      "url": "https://newscryptoworld.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://newscryptoworld.github.io/#website",
+      "name": "Crypto Record",
+      "url": "https://newscryptoworld.github.io/",
+      "publisher": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Record reports news on Bitcoin, Ethereum, Solana, DeFi protocols, exchanges, stablecoins, regulation and network upgrades across the crypto market."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s9e43d8a" href="#main">Skip to content</a>
+<header class="s9fcc171">
+  <div class="s1a1f8a9 s8459af5">
+    <a class="s9575b21" href="/">Crypto Record</a>
+    <p class="s888dd1a">Crypto news across every chain</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="s1a1f8a9 s48acf5d">
+  <article class="sd341993">
+    <div class="s8e49568">
+      <p class="s9a9fd2c"><span class="s510c5e3">2026-09-30 10:14 UTC</span><span class="s73262ce">ccd492</span></p>
+      <h1 class="s3543549">Why a Swap Can Stay Pending: Tick Arrays Explained</h1>
+<p class="s09cc4bc">Tick arrays supply ranges a concentrated-liquidity swap can cross; a bad sequence can fail execution, while network confirmation determines how long it stays pending.</p>      <p class="s36b51e3"><span class="s06f7245">Crypto Record Editorial</span><time datetime="2026-09-30T10:14:56+00:00">Sep 30, 2026</time><span>3 min read</span></p>
+    </div>
+    <figure class="sad7290f"><img fetchpriority="high" class="s6e4f956" src="/assets/covers/why-a-swap-can-stay-pending-tick-arrays-explained.jpg" alt="Why a Swap Can Stay Pending: Tick Arrays Explained"></figure>
+    <div class="s4cae579"><p>A swap can remain pending because the network has not confirmed its transaction, while tick arrays determine whether a concentrated-liquidity swap has the data it needs to execute. The distinction matters: an on-chain confirmation delay is different from a transaction that fails because the swap cannot continue through the price ranges it needs to inspect. A wallet’s status alone may not tell you which is happening.</p>
+
+<h2>What does a tick array do in a swap?</h2>
+<p>A tick array stores information about a section of a pool’s possible prices. In a concentrated-liquidity pool, liquidity is active only across particular price ranges. The pool records the boundaries between those ranges as ticks, and liquidity can change when the swap crosses one.</p>
+<p>When you submit a swap, the program starts at the pool’s current price and moves in the trade’s direction. It calculates how much can trade before the next initialized tick, applies the liquidity available there, then continues if the order needs more. The transaction must provide the tick-array accounts that cover the path the swap may take. Think of them as pages in a ledger: the program needs the relevant pages to calculate each step.</p>
+<p>The interface may show a quoted route before submission, but the on-chain program still checks the supplied accounts and trade limits when it runs. A <a href="https://hien-loo-_df5xbgbnfk_pikdno3jg.justblogged.com/how-should-you-use-byreal-swap-or-provide-liquidity" rel="noopener">fuller Byreal swap and liquidity walkthrough</a> covers the user flow; the key mechanic here is that the pool needs the right tick data for the swap’s direction and reach.</p>
+
+<h2>Why can missing tick arrays stop a trade?</h2>
+<p>If the swap needs to cross into a price range whose array was not supplied, the program may reject the transaction. The same can happen if the account sequence is invalid for the pool or direction. This is an execution failure, even if the wallet briefly labels the transaction as pending while it awaits a result.</p>
+<p>A larger trade can require more arrays because it may move the price across more ranges. A smaller trade may finish within the current range. The swap’s price limit and minimum-output setting also matter: reaching a limit can stop the calculation before the full requested amount trades, or cause the transaction to fail if its conditions are no longer met.</p>
+<p>Tick arrays do not hold a separate pile of tokens for each price. They let the pool find initialized ticks and account for liquidity as the price moves. That makes concentrated liquidity more targeted, but means a swap needs the correct range data to calculate its path.</p>
+
+<h2>What should you check when a swap is pending?</h2>
+<p>Check the transaction’s actual status before submitting it again. If it has not been confirmed, another submission could create a second trade. If it failed, inspect the error or explorer details; a missing account, price limit, or minimum output can point to an execution issue rather than a slow confirmation.</p>
+<ul>
+<li>Confirm whether the transaction is still processing or has failed.</li>
+<li>Check the quoted output and the minimum output allowed by slippage settings.</li>
+<li>If the app offers a refreshed quote, review it before retrying; the pool price may have moved.</li>
+<li>For a repeated tick-array error, use a route or interface that builds the swap accounts for the current pool and direction.</li>
+</ul>
+<p>In short, tick arrays shape how far a swap can calculate through a pool’s price ranges. They can explain why execution fails, but they do not by themselves explain a slow confirmation. Treat those as separate checks, and retry only once the first transaction’s status is clear.</p></div>
+  </article>
+  <aside class="s27e44d1">
+    <h2 class="sa1db085">Related stories</h2>
+    <ul class="s591294b">
+      <li class="s6b549f7"><a href="/why-a-native-bridge-withdrawal-can-take-days/">Why a Native Bridge Withdrawal Can Take Days</a></li>
+      <li class="s6b549f7"><a href="/how-to-find-wallets-buying-near-local-lows/">How to Find Wallets Buying Near Local Lows</a></li>
+      <li class="s6b549f7"><a href="/tron-swap-where-a-token-blacklist-stops-settlement/">TRON Swap: Where a Token Blacklist Stops Settlement</a></li>
+      <li class="s6b549f7"><a href="/why-treasury-swaps-on-tron-leave-token-dust/">Why Treasury Swaps on TRON Leave Token Dust</a></li>
+    </ul>
+  </aside>
+</div>
+</main>
+
+<footer class="s0ee839a">
+  <div class="s1a1f8a9 s4261b21">
+    <div class="se15a721">
+      <p class="saa1fdb2">Crypto Record</p>
+      <nav class="sd1f22b1" aria-label="Site">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">Masthead</a></li>
+          <li><a href="/privacy/">Privacy &amp; terms</a></li>
+          <li><a href="/archive/">All articles</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="s909df4b">Independent coverage — not investment advice.</p>
+    <p class="s1bc00f0">© 2026 Crypto Record</p>
+  </div>
+</footer>
+</body>
+</html>
