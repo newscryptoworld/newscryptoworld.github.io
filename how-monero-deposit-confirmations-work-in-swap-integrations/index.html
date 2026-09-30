@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monero Deposit Confirmation for Swap Integrations</title>
+<meta name="description" content="A swap service detects an XMR deposit through its wallet scan, matches it to an order, then waits for block confirmations before releasing the other asset.">
+<link rel="canonical" href="https://newscryptoworld.github.io/how-monero-deposit-confirmations-work-in-swap-integrations/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#17131b">
+<meta name="author" content="Crypto Record Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Record">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How Monero Deposit Confirmations Work in Swap Integrations">
+<meta property="og:description" content="A swap service detects an XMR deposit through its wallet scan, matches it to an order, then waits for block confirmations before releasing the other asset.">
+<meta property="og:url" content="https://newscryptoworld.github.io/how-monero-deposit-confirmations-work-in-swap-integrations/">
+<meta property="og:image" content="https://newscryptoworld.github.io/assets/covers/how-monero-deposit-confirmations-work-in-swap-integrations-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How Monero Deposit Confirmations Work in Swap Integrations"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How Monero Deposit Confirmations Work in Swap Integrations">
+<meta name="twitter:description" content="A swap service detects an XMR deposit through its wallet scan, matches it to an order, then waits for block confirmations before releasing the other asset.">
+<meta property="article:published_time" content="2026-09-30T16:49:43+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s81fa52dae9.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Record" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://newscryptoworld.github.io/how-monero-deposit-confirmations-work-in-swap-integrations/#webpage",
+      "url": "https://newscryptoworld.github.io/how-monero-deposit-confirmations-work-in-swap-integrations/",
+      "name": "Monero Deposit Confirmation for Swap Integrations",
+      "isPartOf": {
+        "@id": "https://newscryptoworld.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://newscryptoworld.github.io/how-monero-deposit-confirmations-work-in-swap-integrations/#article",
+      "headline": "How Monero Deposit Confirmations Work in Swap Integrations",
+      "isAccessibleForFree": true,
+      "description": "A swap service detects an XMR deposit through its wallet scan, matches it to an order, then waits for block confirmations before releasing the other asset.",
+      "datePublished": "2026-09-30T16:49:43+00:00",
+      "dateModified": "2026-09-30T16:49:43+00:00",
+      "url": "https://newscryptoworld.github.io/how-monero-deposit-confirmations-work-in-swap-integrations/",
+      "mainEntityOfPage": {
+        "@id": "https://newscryptoworld.github.io/how-monero-deposit-confirmations-work-in-swap-integrations/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "wordCount": 578,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/covers/how-monero-deposit-confirmations-work-in-swap-integrations.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://newscryptoworld.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How Monero Deposit Confirmations Work in Swap Integrations",
+          "item": "https://newscryptoworld.github.io/how-monero-deposit-confirmations-work-in-swap-integrations/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://newscryptoworld.github.io/#org",
+      "name": "Crypto Record",
+      "url": "https://newscryptoworld.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://newscryptoworld.github.io/#website",
+      "name": "Crypto Record",
+      "url": "https://newscryptoworld.github.io/",
+      "publisher": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Record reports news on Bitcoin, Ethereum, Solana, DeFi protocols, exchanges, stablecoins, regulation and network upgrades across the crypto market."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s9e43d8a" href="#main">Skip to content</a>
+<header class="s9fcc171">
+  <div class="s1a1f8a9 s8459af5">
+    <a class="s9575b21" href="/">Crypto Record</a>
+    <p class="s888dd1a">Crypto news across every chain</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="s1a1f8a9 s48acf5d">
+  <article class="sd341993">
+    <div class="s8e49568">
+      <p class="s9a9fd2c"><span class="s510c5e3">2026-09-30 16:49 UTC</span><span class="s73262ce">97fae3</span></p>
+      <h1 class="s3543549">How Monero Deposit Confirmations Work in Swap Integrations</h1>
+<p class="s09cc4bc">A swap service detects an XMR deposit through its wallet scan, matches it to an order, then waits for block confirmations before releasing the other asset.</p>      <p class="s36b51e3"><span class="s06f7245">Crypto Record Editorial</span><time datetime="2026-09-30T16:49:43+00:00">Sep 30, 2026</time><span>3 min read</span></p>
+    </div>
+    <figure class="sad7290f"><img fetchpriority="high" class="s6e4f956" src="/assets/covers/how-monero-deposit-confirmations-work-in-swap-integrations.jpg" alt="How Monero Deposit Confirmations Work in Swap Integrations"></figure>
+    <div class="s4cae579"><p>A swap integration confirms a Monero deposit by scanning for an output to its receiving wallet, matching that output to an order, and counting the blocks mined after it is included. The sequence matters because Monero’s privacy features mean an outside observer cannot verify a payment just by inspecting a public address and amount. The receiving wallet does the matching.</p>
+
+<p>At checkout, the service creates an order and gives the customer a Monero address, often a subaddress assigned to that order. The customer sends XMR to it. A node relays the transaction; miners include it in a block; then the service’s wallet scans that block to see whether an output belongs to its wallet. For a broader look at how these handoffs fit together, see this <a href="https://paragraph.com/@robertcryptonews/xmr-bridge-in-2026-move-monero-to-btc-eth-or-usdt" rel="noopener">xmr bridge</a> overview.</p>
+
+<h2>How does a swap service detect an XMR deposit?</h2>
+
+<p>The wallet, rather than a generic block explorer, identifies the incoming output. Monero transactions hide recipient details and amounts from public view. A wallet scans transactions using its private view key and checks whether an output was made for it. The integration can then associate the detected transfer with the order’s receiving address or subaddress.</p>
+
+<p>The service may use Monero’s wallet RPC to read incoming transfers and their status. It can compare the detected amount with the order’s expected amount, record the transaction, and update the customer’s order screen. A transaction ID can help track a payment, but it does not by itself let an unrelated observer prove the amount sent to a particular address. The wallet’s scan is the key step.</p>
+
+<h2>What does a confirmation mean for a Monero swap?</h2>
+
+<p>A confirmation means the transaction has been included in a block and more blocks have been mined after that block. The wallet can report this count. Each new block adds evidence that the deposit is part of the chain the service is following, so the integration can wait for its chosen threshold before treating the order as funded.</p>
+
+<p>That threshold is an operating policy, not a universal swap setting. A service balances a faster handoff against the risk of acting on a transaction with little confirmation history. Monero also keeps newly received outputs unavailable for spending until they have enough confirmations. That spendability rule is separate from the service’s decision to mark an order paid or start sending the other asset.</p>
+
+<h2>What should an integration check before releasing the swap?</h2>
+
+<p>Confirmation count alone is not the whole order check. A reliable flow keeps the deposit and order linked, checks that the amount meets the quote’s terms, and handles payments that arrive late or differ from the expected amount. The integration should also keep checking the wallet as new blocks arrive, since a payment can first appear as pending before it is mined.</p>
+
+<ul>
+<li>Assign a receiving address or subaddress to the order and store that mapping.</li>
+<li>Use the wallet’s incoming-transfer data to identify the deposit and its confirmation count.</li>
+<li>Apply a stated confirmation threshold before moving the order to its next step.</li>
+<li>Define how late, partial, or excess deposits are handled and shown to the customer.</li>
+</ul>
+
+<p>For a customer, the practical signal is the order status shown by the swap service: “sent” means the wallet broadcast the transaction; “received” means the service detected it; and “confirmed” means it has met the service’s block threshold. Check the quoted deposit address and amount before sending. Afterward, allow the integration to finish its scan and confirmation steps before treating the swap as complete.</p></div>
+  </article>
+  <aside class="s27e44d1">
+    <h2 class="sa1db085">Related stories</h2>
+    <ul class="s591294b">
+      <li class="s6b549f7"><a href="/why-a-token-approval-fails-in-a-self-custody-wallet/">Why a Token Approval Fails in a Self-Custody Wallet</a></li>
+      <li class="s6b549f7"><a href="/claim-fees-or-remove-liquidity-the-timing-mechanics/">Claim fees or remove liquidity? The timing mechanics</a></li>
+      <li class="s6b549f7"><a href="/how-blackhole-contributions-set-a-token-pools-first-depth/">How Blackhole Contributions Set a Token Pool’s First Depth</a></li>
+      <li class="s6b549f7"><a href="/reconcile-the-lp-burn-before-treasury-exit/">Reconcile the LP Burn Before Treasury Exit</a></li>
+    </ul>
+  </aside>
+</div>
+</main>
+
+<footer class="s0ee839a">
+  <div class="s1a1f8a9 s4261b21">
+    <div class="se15a721">
+      <p class="saa1fdb2">Crypto Record</p>
+      <nav class="sd1f22b1" aria-label="Site">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">Masthead</a></li>
+          <li><a href="/privacy/">Privacy &amp; terms</a></li>
+          <li><a href="/archive/">All articles</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="s909df4b">Independent coverage — not investment advice.</p>
+    <p class="s1bc00f0">© 2026 Crypto Record</p>
+  </div>
+</footer>
+</body>
+</html>
