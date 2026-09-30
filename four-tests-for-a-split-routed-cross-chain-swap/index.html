@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Split-Routed Cross-Chain Swaps: Four Tests | Crypto Record</title>
+<meta name="description" content="A split-routed swap divides one cross-chain trade across several paths; compare net output, bridge steps, destination delivery and failure handling before signing.">
+<link rel="canonical" href="https://newscryptoworld.github.io/four-tests-for-a-split-routed-cross-chain-swap/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#17131b">
+<meta name="author" content="Crypto Record Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Record">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Four tests for a split-routed cross-chain swap">
+<meta property="og:description" content="A split-routed swap divides one cross-chain trade across several paths; compare net output, bridge steps, destination delivery and failure handling before signing.">
+<meta property="og:url" content="https://newscryptoworld.github.io/four-tests-for-a-split-routed-cross-chain-swap/">
+<meta property="og:image" content="https://newscryptoworld.github.io/assets/covers/four-tests-for-a-split-routed-cross-chain-swap-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Four tests for a split-routed cross-chain swap"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Four tests for a split-routed cross-chain swap">
+<meta name="twitter:description" content="A split-routed swap divides one cross-chain trade across several paths; compare net output, bridge steps, destination delivery and failure handling before signing.">
+<meta property="article:published_time" content="2026-09-30T15:40:24+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s81fa52dae9.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Record" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://newscryptoworld.github.io/four-tests-for-a-split-routed-cross-chain-swap/#webpage",
+      "url": "https://newscryptoworld.github.io/four-tests-for-a-split-routed-cross-chain-swap/",
+      "name": "Split-Routed Cross-Chain Swaps: Four Tests | Crypto Record",
+      "isPartOf": {
+        "@id": "https://newscryptoworld.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://newscryptoworld.github.io/four-tests-for-a-split-routed-cross-chain-swap/#article",
+      "headline": "Four tests for a split-routed cross-chain swap",
+      "isAccessibleForFree": true,
+      "description": "A split-routed swap divides one cross-chain trade across several paths; compare net output, bridge steps, destination delivery and failure handling before signing.",
+      "datePublished": "2026-09-30T15:40:24+00:00",
+      "dateModified": "2026-09-30T15:40:24+00:00",
+      "url": "https://newscryptoworld.github.io/four-tests-for-a-split-routed-cross-chain-swap/",
+      "mainEntityOfPage": {
+        "@id": "https://newscryptoworld.github.io/four-tests-for-a-split-routed-cross-chain-swap/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "wordCount": 619,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/covers/four-tests-for-a-split-routed-cross-chain-swap.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://newscryptoworld.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Four tests for a split-routed cross-chain swap",
+          "item": "https://newscryptoworld.github.io/four-tests-for-a-split-routed-cross-chain-swap/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://newscryptoworld.github.io/#org",
+      "name": "Crypto Record",
+      "url": "https://newscryptoworld.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://newscryptoworld.github.io/#website",
+      "name": "Crypto Record",
+      "url": "https://newscryptoworld.github.io/",
+      "publisher": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Record reports news on Bitcoin, Ethereum, Solana, DeFi protocols, exchanges, stablecoins, regulation and network upgrades across the crypto market."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s9e43d8a" href="#main">Skip to content</a>
+<header class="s9fcc171">
+  <div class="s1a1f8a9 s8459af5">
+    <a class="s9575b21" href="/">Crypto Record</a>
+    <p class="s888dd1a">Crypto news across every chain</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="s1a1f8a9 s48acf5d">
+  <article class="sd341993">
+    <div class="s8e49568">
+      <p class="s9a9fd2c"><span class="s510c5e3">2026-09-30 15:40 UTC</span><span class="s73262ce">a34b2e</span></p>
+      <h1 class="s3543549">Four tests for a split-routed cross-chain swap</h1>
+<p class="s09cc4bc">A split-routed swap divides one cross-chain trade across several paths; compare net output, bridge steps, destination delivery and failure handling before signing.</p>      <p class="s36b51e3"><span class="s06f7245">Crypto Record Editorial</span><time datetime="2026-09-30T15:40:24+00:00">Sep 30, 2026</time><span>3 min read</span></p>
+    </div>
+    <figure class="sad7290f"><img fetchpriority="high" class="s6e4f956" src="/assets/covers/four-tests-for-a-split-routed-cross-chain-swap.jpg" alt="Four tests for a split-routed cross-chain swap"></figure>
+    <div class="s4cae579"><p>A split-routed cross-chain swap divides a trade into portions, sends them through separate routes, then delivers the resulting assets on a destination chain. The swap interface first gathers route quotes; its transaction then uses source-chain liquidity and one or more cross-chain mechanisms, such as bridges, before any destination-side swap or delivery. The split can improve the quoted result when routes have different liquidity, but each added path brings another fee, contract or settlement step to check.</p>
+
+<h2>How does a split-routed swap move funds?</h2>
+<p>The aggregator compares available paths for the source and destination assets, then allocates portions of the input across selected routes. A route may swap through a liquidity pool, transfer an asset across a bridge, or combine both steps. The source transaction can bundle several operations, but the routes still have their own execution conditions. The destination assets may arrive in separate amounts or require another swap before they match the requested token.</p>
+<p>Think of it as dividing a shipment among several carriers: the total can arrive through different channels, and each channel has its own handoff. A fuller explanation of route selection is in this guide to the <a href="https://cryptoblog.justblogged.com/how-choose-bungee-bridge-routes-your-transfer" rel="noopener">bungee bridge</a>. For the trade in front of you, test the paths shown in the quote rather than assuming the split itself guarantees a better outcome.</p>
+
+<h2>How can you tell whether the split improves the trade?</h2>
+<p>Compare the amount you should receive after all route costs, not just the headline output. A path can show a strong exchange rate and still lose value to network fees, bridge charges, destination swaps or price movement before execution. Check the quote against a simpler route and compare the same input, destination token and recipient conditions.</p>
+<ul>
+<li><strong>Net output:</strong> Find the minimum destination amount and whether it is stated before or after destination-side fees.</li>
+<li><strong>Route shares:</strong> See how much of the input each path carries. A tiny path can add a contract and fee without changing the result much.</li>
+<li><strong>Price impact and slippage:</strong> Check how much the estimate can move before the transaction reverts or delivers less.</li>
+<li><strong>Network costs:</strong> Include source and destination gas where the quote shows them, and account for any separate claim or completion step.</li>
+</ul>
+<p>For most users, a route with a slightly lower estimate but fewer uncertain handoffs is the better choice when the net difference is small. The useful comparison is the guaranteed minimum against the total cost and steps.</p>
+
+<h2>What should you check before signing?</h2>
+<p>Confirm the source chain, destination chain, token contracts and recipient address in the transaction details. A familiar token name can refer to different assets on different chains. Review the spender and requested token allowance, too; the swap contract needs permission to use the input asset, but the spender should match the transaction you intend to make.</p>
+<p>Then check whether the quote has an expiry, a minimum received amount and a clear failure outcome. Some source transactions revert if a condition fails; a bridge transfer that has already started may instead need time or a separate action to complete. Do not treat a pending destination leg as proof that the whole trade has failed, or as proof that it has finished. Use the transaction status and route details to see which step remains.</p>
+
+<h2>When is split routing worth using?</h2>
+<p>It is most useful when splitting accesses liquidity that one path cannot provide at a comparable net price. It is less compelling when the quote adds several hops for a marginal gain, or when the destination asset must arrive quickly and predictably. Before signing, compare total output, route complexity and recovery steps. That makes the trade-off visible: more paths may improve execution, but they also make the transfer harder to inspect and track.</p></div>
+  </article>
+  <aside class="s27e44d1">
+    <h2 class="sa1db085">Related stories</h2>
+    <ul class="s591294b">
+      <li class="s6b549f7"><a href="/find-the-exact-collateral-token-a-vault-accepts/">Find the Exact Collateral Token a Vault Accepts</a></li>
+      <li class="s6b549f7"><a href="/when-is-faster-swap-settlement-worth-paying-for/">When Is Faster Swap Settlement Worth Paying For?</a></li>
+      <li class="s6b549f7"><a href="/how-to-check-a-pending-chainflip-swap/">How to Check a Pending Chainflip Swap</a></li>
+      <li class="s6b549f7"><a href="/how-clmm-ranges-shape-your-liquidity-position/">How CLMM Ranges Shape Your Liquidity Position</a></li>
+    </ul>
+  </aside>
+</div>
+</main>
+
+<footer class="s0ee839a">
+  <div class="s1a1f8a9 s4261b21">
+    <div class="se15a721">
+      <p class="saa1fdb2">Crypto Record</p>
+      <nav class="sd1f22b1" aria-label="Site">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">Masthead</a></li>
+          <li><a href="/privacy/">Privacy &amp; terms</a></li>
+          <li><a href="/archive/">All articles</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="s909df4b">Independent coverage — not investment advice.</p>
+    <p class="s1bc00f0">© 2026 Crypto Record</p>
+  </div>
+</footer>
+</body>
+</html>
