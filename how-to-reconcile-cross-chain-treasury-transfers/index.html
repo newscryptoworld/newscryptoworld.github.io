@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cross-Chain Treasury Transfer Reconciliation | Crypto Record</title>
+<meta name="description" content="Cross-chain treasury transfers reconcile by matching a source-chain debit to a destination-chain credit, then resolving fees, delays and failures before closing the books.">
+<link rel="canonical" href="https://newscryptoworld.github.io/how-to-reconcile-cross-chain-treasury-transfers/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#17131b">
+<meta name="author" content="Crypto Record Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Record">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How to Reconcile Cross-Chain Treasury Transfers">
+<meta property="og:description" content="Cross-chain treasury transfers reconcile by matching a source-chain debit to a destination-chain credit, then resolving fees, delays and failures before closing the books.">
+<meta property="og:url" content="https://newscryptoworld.github.io/how-to-reconcile-cross-chain-treasury-transfers/">
+<meta property="og:image" content="https://newscryptoworld.github.io/assets/covers/how-to-reconcile-cross-chain-treasury-transfers-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How to Reconcile Cross-Chain Treasury Transfers"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Reconcile Cross-Chain Treasury Transfers">
+<meta name="twitter:description" content="Cross-chain treasury transfers reconcile by matching a source-chain debit to a destination-chain credit, then resolving fees, delays and failures before closing the books.">
+<meta property="article:published_time" content="2026-09-30T00:34:09+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s81fa52dae9.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Record" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://newscryptoworld.github.io/how-to-reconcile-cross-chain-treasury-transfers/#webpage",
+      "url": "https://newscryptoworld.github.io/how-to-reconcile-cross-chain-treasury-transfers/",
+      "name": "Cross-Chain Treasury Transfer Reconciliation | Crypto Record",
+      "isPartOf": {
+        "@id": "https://newscryptoworld.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://newscryptoworld.github.io/how-to-reconcile-cross-chain-treasury-transfers/#article",
+      "headline": "How to Reconcile Cross-Chain Treasury Transfers",
+      "isAccessibleForFree": true,
+      "description": "Cross-chain treasury transfers reconcile by matching a source-chain debit to a destination-chain credit, then resolving fees, delays and failures before closing the books.",
+      "datePublished": "2026-09-30T00:34:09+00:00",
+      "dateModified": "2026-09-30T00:34:09+00:00",
+      "url": "https://newscryptoworld.github.io/how-to-reconcile-cross-chain-treasury-transfers/",
+      "mainEntityOfPage": {
+        "@id": "https://newscryptoworld.github.io/how-to-reconcile-cross-chain-treasury-transfers/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "wordCount": 569,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/covers/how-to-reconcile-cross-chain-treasury-transfers.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://newscryptoworld.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How to Reconcile Cross-Chain Treasury Transfers",
+          "item": "https://newscryptoworld.github.io/how-to-reconcile-cross-chain-treasury-transfers/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://newscryptoworld.github.io/#org",
+      "name": "Crypto Record",
+      "url": "https://newscryptoworld.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://newscryptoworld.github.io/#website",
+      "name": "Crypto Record",
+      "url": "https://newscryptoworld.github.io/",
+      "publisher": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Record reports news on Bitcoin, Ethereum, Solana, DeFi protocols, exchanges, stablecoins, regulation and network upgrades across the crypto market."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s9e43d8a" href="#main">Skip to content</a>
+<header class="s9fcc171">
+  <div class="s1a1f8a9 s8459af5">
+    <a class="s9575b21" href="/">Crypto Record</a>
+    <p class="s888dd1a">Crypto news across every chain</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="s1a1f8a9 s48acf5d">
+  <article class="sd341993">
+    <div class="s8e49568">
+      <p class="s9a9fd2c"><span class="s510c5e3">2026-09-30 00:34 UTC</span><span class="s73262ce">42d4c7</span></p>
+      <h1 class="s3543549">How to Reconcile Cross-Chain Treasury Transfers</h1>
+<p class="s09cc4bc">Cross-chain treasury transfers reconcile by matching a source-chain debit to a destination-chain credit, then resolving fees, delays and failures before closing the books.</p>      <p class="s36b51e3"><span class="s06f7245">Crypto Record Editorial</span><time datetime="2026-09-30T00:34:09+00:00">Sep 30, 2026</time><span>3 min read</span></p>
+    </div>
+    <figure class="sad7290f"><img fetchpriority="high" class="s6e4f956" src="/assets/covers/how-to-reconcile-cross-chain-treasury-transfers.jpg" alt="How to Reconcile Cross-Chain Treasury Transfers"></figure>
+    <div class="s4cae579"><p>Reconcile a cross-chain treasury transfer by matching the debit on the sending chain with the credit on the receiving chain, then accounting for fees and any unresolved status. The transfer crosses two separate ledgers. A bridge or messaging system carries the instruction between them, but it does not make the two chains share one transaction record.</p>
+
+<p>Start with the treasury’s instruction: asset, amount, source chain, destination chain and recipient address. The source-chain transaction may lock tokens in a contract or burn them. A bridge validator or other verification process confirms that event. The destination side then releases or mints the corresponding asset. Each step creates its own transaction hash, and the bridge may assign a message or transfer identifier that connects them.</p>
+
+<p>In a lock-and-mint route, the original tokens are held on one chain while a representation is minted on another. The <a href="https://cryptoposts.github.io/fermi-swap-routes-explain-how-lock-and-mint-transfers-work/" rel="noopener">fermi swap lock-and-mint route explainer</a> walks through that sequence in more detail. For reconciliation, the key is to link the source event to the destination event, rather than treating either transaction hash as the whole transfer.</p>
+
+<h2>Which records should you match?</h2>
+
+<p>Match the transfer using its shared message ID where available, then verify the details against both chain records. A useful reconciliation row keeps the instruction, source event and destination outcome together. Record at least:</p>
+
+<ul>
+<li>The intended asset, amount, chains and recipient.</li>
+<li>The source transaction hash and the amount locked or burned.</li>
+<li>The bridge message ID, route and current status.</li>
+<li>The destination transaction hash, amount received and any fee or shortfall.</li>
+</ul>
+
+<p>Asset names alone are not enough. A token on the destination chain may be a wrapped representation of the source asset, with a different contract address and ticker. Maintain an approved mapping between the treasury’s accounting asset and each chain’s token contract. Also distinguish the requested amount from the amount delivered: bridge fees, network fees or route terms can change what arrives.</p>
+
+<h2>When is a transfer complete?</h2>
+
+<p>Mark a transfer complete only when the source event is sufficiently final and the destination action has succeeded. A submitted source transaction is not yet proof of a settled transfer. The bridge may still be waiting for confirmations, validators, or a destination transaction. Use the route’s documented finality rules to decide when the source event can be treated as settled.</p>
+
+<p>Until both sides are confirmed, keep the amount in a transfer-clearing account or equivalent pending status. This makes the timing gap visible without recording the same funds as available in both wallets. Once the destination credit is confirmed, clear the pending entry against the receiving wallet. Record fees separately if your accounting policy tracks them as an expense.</p>
+
+<h2>How should you handle delays or failures?</h2>
+
+<p>Keep an unmatched transfer open and classify it by its last confirmed step. If the source transaction failed, there may be no funds to recover. If tokens were locked but the destination mint or release failed, the transfer remains in flight until the bridge completes it or its recovery process returns the funds. Do not create a destination credit based only on the original instruction.</p>
+
+<p>Review exceptions against the bridge status and both chain records. A delayed transfer needs follow-up; a refunded transfer needs its return transaction matched; and a partial receipt needs its difference explained. The practical rule is simple: reconcile the instruction, the source movement and the destination outcome as one linked record, while keeping pending value distinct from settled treasury funds.</p></div>
+  </article>
+  <aside class="s27e44d1">
+    <h2 class="sa1db085">Related stories</h2>
+    <ul class="s591294b">
+      <li class="s6b549f7"><a href="/keep-eth-and-pol-ready-for-polygon-bridge-transfers/">Keep ETH and POL Ready for Polygon Bridge Transfers</a></li>
+      <li class="s6b549f7"><a href="/why-tiny-token-balances-can-get-stuck-on-the-bridge/">Why tiny token balances can get stuck on the bridge</a></li>
+      <li class="s6b549f7"><a href="/paying-a-team-on-their-preferred-chains/">Paying a Team on Their Preferred Chains</a></li>
+      <li class="s6b549f7"><a href="/before-using-omnichain-check-message-security-time-and-fees/">Before Using Omnichain, Check Message Security, Time and Fees</a></li>
+    </ul>
+  </aside>
+</div>
+</main>
+
+<footer class="s0ee839a">
+  <div class="s1a1f8a9 s4261b21">
+    <div class="se15a721">
+      <p class="saa1fdb2">Crypto Record</p>
+      <nav class="sd1f22b1" aria-label="Site">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">Masthead</a></li>
+          <li><a href="/privacy/">Privacy &amp; terms</a></li>
+          <li><a href="/archive/">All articles</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="s909df4b">Independent coverage — not investment advice.</p>
+    <p class="s1bc00f0">© 2026 Crypto Record</p>
+  </div>
+</footer>
+</body>
+</html>
