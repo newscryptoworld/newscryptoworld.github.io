@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://newscryptoworld.github.io/</loc><lastmod>2026-10-05</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://newscryptoworld.github.io/</loc><lastmod>2026-10-06</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://newscryptoworld.github.io/fairshake-backs-32-house-candidates-after-clarity-stalls/</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://newscryptoworld.github.io/okx-ice-venue-plans-permissioned-trading-for-tokenized-us-stocks/</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://newscryptoworld.github.io/why-a-stuck-bnb-chain-transaction-has-no-timestamp/</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://newscryptoworld.github.io/how-to-route-merchant-crypto-revenue-to-settlement/</loc><lastmod>2026-10-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -100,17 +101,18 @@
 <url><loc>https://newscryptoworld.github.io/baseswap-what-confirms-a-transfer-before-tokens-arrive/</loc><lastmod>2026-09-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://newscryptoworld.github.io/why-your-arbitrum-swap-is-pending-or-failing/</loc><lastmod>2026-09-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://newscryptoworld.github.io/uk-banks-move-tokenised-deposits-across-shared-platform/</loc><lastmod>2026-09-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://newscryptoworld.github.io/archive/</loc><priority>0.3</priority></url>
-<url><loc>https://newscryptoworld.github.io/about/</loc><priority>0.3</priority></url>
-<url><loc>https://newscryptoworld.github.io/privacy/</loc><priority>0.3</priority></url>
-<url><loc>https://newscryptoworld.github.io/page/2/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://newscryptoworld.github.io/page/3/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://newscryptoworld.github.io/page/4/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://newscryptoworld.github.io/page/5/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://newscryptoworld.github.io/page/6/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://newscryptoworld.github.io/page/7/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://newscryptoworld.github.io/page/8/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://newscryptoworld.github.io/page/9/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://newscryptoworld.github.io/page/10/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://newscryptoworld.github.io/archive/page/2/</loc><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://newscryptoworld.github.io/archive/</loc><lastmod>2026-10-06</lastmod><priority>0.3</priority></url>
+<url><loc>https://newscryptoworld.github.io/about/</loc><lastmod>2026-09-24</lastmod><priority>0.3</priority></url>
+<url><loc>https://newscryptoworld.github.io/privacy/</loc><lastmod>2026-09-24</lastmod><priority>0.3</priority></url>
+<url><loc>https://newscryptoworld.github.io/editorial-policy/</loc><lastmod>2026-09-24</lastmod><priority>0.3</priority></url>
+<url><loc>https://newscryptoworld.github.io/page/2/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://newscryptoworld.github.io/page/3/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://newscryptoworld.github.io/page/4/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://newscryptoworld.github.io/page/5/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://newscryptoworld.github.io/page/6/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://newscryptoworld.github.io/page/7/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://newscryptoworld.github.io/page/8/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://newscryptoworld.github.io/page/9/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://newscryptoworld.github.io/page/10/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://newscryptoworld.github.io/archive/page/2/</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
 </urlset>

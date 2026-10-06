@@ -99,7 +99,8 @@
         "url": "https://newscryptoworld.github.io/assets/og.jpg",
         "width": 1200,
         "height": 630
-      }
+      },
+      "publishingPrinciples": "https://newscryptoworld.github.io/editorial-policy/"
     },
     {
       "@type": "WebSite",
@@ -133,7 +134,7 @@
       <h1 class="s3543549">TRON Swap: Where a Token Blacklist Stops Settlement</h1>
 <p class="s09cc4bc">A TRON swap settles through token-contract transfers, so a blacklist can stop USDT at a specific address without freezing TRX or every asset on the network.</p>      <p class="s36b51e3"><span class="s06f7245">Crypto Record Editorial</span><time datetime="2026-09-30T01:29:09+00:00">Sep 30, 2026</time><span>3 min read</span></p>
     </div>
-    <figure class="sad7290f"><img fetchpriority="high" class="s6e4f956" src="/assets/covers/tron-swap-where-a-token-blacklist-stops-settlement.jpg" alt="TRON Swap: Where a Token Blacklist Stops Settlement"></figure>
+    <figure class="sad7290f"><img width="1200" height="630" fetchpriority="high" class="s6e4f956" src="/assets/covers/tron-swap-where-a-token-blacklist-stops-settlement.jpg" alt="TRON Swap: Where a Token Blacklist Stops Settlement"></figure>
     <div class="s4cae579"><p>A TRON swap moves tokens through contract calls, and a token blacklist can stop settlement when a restricted address touches that token’s transfer. First, the wallet approves a router to spend a set amount of a TRC-20 token. The router calls <code>transferFrom</code> to move the input from the wallet to a liquidity pool. The pool calculates the output, then transfers it to the recipient, sometimes through other pools along the route. Each transfer is checked by the token contract.</p>
 
 <p>That last step is where the boundary matters. For USDT on TRON, Tether’s contract can restrict transfers involving a blacklisted address. The swap’s router cannot override that rule. For the separate task of coordinating a payout, this <a href="https://ethereumnews.github.io/tron-swap-guide-prepare-a-wallet-for-team-payouts/" rel="noopener">guide to preparing a TRON swap wallet for team payouts</a> covers wallet setup in more detail. The settlement mechanics still depend on the token contract and the addresses in the route.</p>
@@ -165,10 +166,10 @@
   <aside class="s27e44d1">
     <h2 class="sa1db085">Related stories</h2>
     <ul class="s591294b">
+      <li class="s6b549f7"><a href="/fairshake-backs-32-house-candidates-after-clarity-stalls/">Fairshake backs 32 House candidates after CLARITY stalls</a></li>
       <li class="s6b549f7"><a href="/okx-ice-venue-plans-permissioned-trading-for-tokenized-us-stocks/">OKX-ICE venue plans permissioned trading for tokenized US stocks</a></li>
       <li class="s6b549f7"><a href="/why-a-stuck-bnb-chain-transaction-has-no-timestamp/">Why a stuck BNB Chain transaction has no timestamp</a></li>
       <li class="s6b549f7"><a href="/how-to-route-merchant-crypto-revenue-to-settlement/">How to Route Merchant Crypto Revenue to Settlement</a></li>
-      <li class="s6b549f7"><a href="/how-checksum-case-changes-an-ethereum-address-search/">How Checksum Case Changes an Ethereum Address Search</a></li>
     </ul>
   </aside>
 </div>
@@ -184,10 +185,11 @@
           <li><a href="/about/">Masthead</a></li>
           <li><a href="/privacy/">Privacy &amp; terms</a></li>
           <li><a href="/archive/">All articles</a></li>
+          <li><a href="/editorial-policy/">Editorial policy</a></li>
         </ul>
       </nav>
     </div>
-    <p class="s909df4b">Independent coverage — not investment advice.</p>
+    <p class="s909df4b">Independent crypto coverage, for information only.</p>
     <p class="s1bc00f0">© 2026 Crypto Record</p>
   </div>
 </footer>
