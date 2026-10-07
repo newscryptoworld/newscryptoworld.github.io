@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portal bridge: receiving wrapped tokens safely</title>
+<meta name="description" content="Portal bridge moves tokens across chains by locking or burning the source asset, then minting or releasing the matching token after a signed message is redeemed.">
+<link rel="canonical" href="https://newscryptoworld.github.io/portal-bridge-how-wrapped-tokens-reach-your-wallet/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#17131b">
+<meta name="author" content="Crypto Record Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Record">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Portal bridge: how wrapped tokens reach your wallet">
+<meta property="og:description" content="Portal bridge moves tokens across chains by locking or burning the source asset, then minting or releasing the matching token after a signed message is redeemed.">
+<meta property="og:url" content="https://newscryptoworld.github.io/portal-bridge-how-wrapped-tokens-reach-your-wallet/">
+<meta property="og:image" content="https://newscryptoworld.github.io/assets/covers/portal-bridge-how-wrapped-tokens-reach-your-wallet-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Portal bridge: how wrapped tokens reach your wallet"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Portal bridge: how wrapped tokens reach your wallet">
+<meta name="twitter:description" content="Portal bridge moves tokens across chains by locking or burning the source asset, then minting or releasing the matching token after a signed message is redeemed.">
+<meta property="article:published_time" content="2026-10-07T13:42:44+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s81fa52dae9.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Record" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://newscryptoworld.github.io/portal-bridge-how-wrapped-tokens-reach-your-wallet/#webpage",
+      "url": "https://newscryptoworld.github.io/portal-bridge-how-wrapped-tokens-reach-your-wallet/",
+      "name": "Portal bridge: receiving wrapped tokens safely",
+      "isPartOf": {
+        "@id": "https://newscryptoworld.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://newscryptoworld.github.io/portal-bridge-how-wrapped-tokens-reach-your-wallet/#article",
+      "headline": "Portal bridge: how wrapped tokens reach your wallet",
+      "isAccessibleForFree": true,
+      "description": "Portal bridge moves tokens across chains by locking or burning the source asset, then minting or releasing the matching token after a signed message is redeemed.",
+      "datePublished": "2026-10-07T13:42:44+00:00",
+      "dateModified": "2026-10-07T13:42:44+00:00",
+      "url": "https://newscryptoworld.github.io/portal-bridge-how-wrapped-tokens-reach-your-wallet/",
+      "mainEntityOfPage": {
+        "@id": "https://newscryptoworld.github.io/portal-bridge-how-wrapped-tokens-reach-your-wallet/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "wordCount": 696,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://newscryptoworld.github.io/assets/covers/portal-bridge-how-wrapped-tokens-reach-your-wallet-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://newscryptoworld.github.io/assets/covers/portal-bridge-how-wrapped-tokens-reach-your-wallet-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://newscryptoworld.github.io/assets/covers/portal-bridge-how-wrapped-tokens-reach-your-wallet-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://newscryptoworld.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Portal bridge: how wrapped tokens reach your wallet",
+          "item": "https://newscryptoworld.github.io/portal-bridge-how-wrapped-tokens-reach-your-wallet/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://newscryptoworld.github.io/#org",
+      "name": "Crypto Record",
+      "url": "https://newscryptoworld.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://newscryptoworld.github.io/editorial-policy/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://newscryptoworld.github.io/#website",
+      "name": "Crypto Record",
+      "url": "https://newscryptoworld.github.io/",
+      "publisher": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Record reports news on Bitcoin, Ethereum, Solana, DeFi protocols, exchanges, stablecoins, regulation and network upgrades across the crypto market."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s9e43d8a" href="#main">Skip to content</a>
+<header class="s9fcc171">
+  <div class="s1a1f8a9 s8459af5">
+    <a class="s9575b21" href="/">Crypto Record</a>
+    <p class="s888dd1a">Crypto news across every chain</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="s1a1f8a9 s48acf5d">
+  <article class="sd341993">
+    <div class="s8e49568">
+      <p class="s9a9fd2c"><span class="s510c5e3">2026-10-07 13:42 UTC</span><span class="s73262ce">0b6718</span></p>
+      <h1 class="s3543549">Portal bridge: how wrapped tokens reach your wallet</h1>
+<p class="s09cc4bc">Portal bridge moves tokens across chains by locking or burning the source asset, then minting or releasing the matching token after a signed message is redeemed.</p>      <p class="s36b51e3"><span class="s06f7245">Crypto Record Editorial</span><time datetime="2026-10-07T13:42:44+00:00">Oct 7, 2026</time><span>4 min read</span></p>
+    </div>
+    <figure class="sad7290f"><img width="1200" height="630" fetchpriority="high" class="s6e4f956" src="/assets/covers/portal-bridge-how-wrapped-tokens-reach-your-wallet.jpg" alt="Portal bridge: how wrapped tokens reach your wallet"></figure>
+    <div class="s4cae579"><p>Portal bridge transfers tokens between blockchains by recording a source-chain action, getting that action signed, and redeeming it on the destination chain. The token that arrives may be a wrapped representation: a token contract on one chain that represents an asset from another. To receive it, you need the right destination network and address, and the transfer must complete on that chain.</p>
+
+<h2>How does a portal bridge transfer work?</h2>
+<p>First, the bridge contract on the source chain handles the token. If it is the token’s original chain, the contract locks the tokens in custody. If it is already a wrapped token, the contract burns them. The source transaction also publishes a message describing the transfer, including the destination chain and recipient address.</p>
+<p>Next, Wormhole’s Guardians observe that message and sign an attestation called a Verified Action Approval, or VAA. The VAA is proof of the source-chain event. It does not carry the tokens across chains; it gives the destination bridge contract evidence to check.</p>
+<p>Finally, the VAA is submitted to the destination chain. The contract verifies it, then either mints the corresponding wrapped token or releases the original token from custody. A relayer may submit the VAA automatically, or the transfer may require a separate redemption step. Think of the VAA as a signed claim ticket: the destination contract checks the ticket before paying out the matching asset.</p>
+<p>For a transfer between Solana, Ethereum, or another supported chain, use <a href="https://portalbridge.app" rel="noopener">portal bridge</a> as the Wormhole-built bridge app for moving tokens across those networks. The transfer still depends on the source transaction and destination redemption both completing.</p>
+
+<h2>What does a wrapped token represent?</h2>
+<p>A wrapped token is a chain-specific representation of an asset whose original token lives elsewhere. Its contract address, balance, and transactions belong to the destination chain. It is not the original token contract copied onto that chain.</p>
+<p>For example, when an original-chain token is locked, the destination chain can mint a wrapped version against that locked balance. When the wrapped version travels back, it is burned and the original can be released. This lock-and-mint, burn-and-release mechanism keeps the two sides connected through the bridge’s records.</p>
+<p>The name and ticker alone do not establish which asset you have. A token can share a familiar symbol with another asset while using a different contract. When receiving, check the source chain and token identity, then confirm the destination chain and recipient address. The wrapped token’s contract on the destination chain is the identity that matters for later transfers or swaps there.</p>
+
+<h2>What should you check before receiving tokens?</h2>
+<p>Check the transfer details before submitting the source transaction, because the destination address and chain are part of the message that gets signed. A correct source transaction can still send tokens to the wrong destination address if those details are wrong.</p>
+<ul>
+<li>Confirm the exact source token and the chain where it originated.</li>
+<li>Choose the destination chain your wallet is connected to and can use.</li>
+<li>Check the recipient address against the wallet or account you intend to receive into.</li>
+<li>After redemption, verify the destination token contract before treating the balance as the asset you expected.</li>
+</ul>
+<p>These checks matter most when an asset has more than one wrapped version or when a token name is unfamiliar. Keep the source transaction record. If the transfer is pending, use its details to distinguish a confirmed source transaction from a completed destination redemption.</p>
+
+<h2>Why can a transfer show as sent but not received?</h2>
+<p>The source transaction and destination transaction are separate chain events. The source may confirm first, while the VAA is still being produced or the destination contract has not yet redeemed it. In that interval, the transfer has started but the destination balance may not have changed.</p>
+<p>Once the message is available, the destination redemption must succeed. Depending on the transfer flow, a relayer handles submission or the recipient needs to complete the step. A failed destination transaction does not mean the source event never happened; check the transfer status and transaction records before starting another transfer. The useful distinction is simple: “sent” describes the source action, while “received” means the destination contract has minted or released the tokens to the intended address.</p></div>
+  </article>
+  <aside class="s27e44d1">
+    <h2 class="sa1db085">Related stories</h2>
+    <ul class="s591294b">
+      <li class="s6b549f7"><a href="/solana-foundation-unveils-atomic-dvp-settlement-on-solana/">Solana Foundation Unveils Atomic DvP Settlement on Solana</a></li>
+      <li class="s6b549f7"><a href="/what-does-syncswap-cost-to-swap-or-add-liquidity/">What Does SyncSwap Cost to Swap or Add Liquidity?</a></li>
+      <li class="s6b549f7"><a href="/fairshake-backs-32-house-candidates-after-clarity-stalls/">Fairshake backs 32 House candidates after CLARITY stalls</a></li>
+      <li class="s6b549f7"><a href="/okx-ice-venue-plans-permissioned-trading-for-tokenized-us-stocks/">OKX-ICE venue plans permissioned trading for tokenized US stocks</a></li>
+    </ul>
+  </aside>
+</div>
+</main>
+
+<footer class="s0ee839a">
+  <div class="s1a1f8a9 s4261b21">
+    <div class="se15a721">
+      <p class="saa1fdb2">Crypto Record</p>
+      <nav class="sd1f22b1" aria-label="Site">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">Masthead</a></li>
+          <li><a href="/privacy/">Privacy &amp; terms</a></li>
+          <li><a href="/archive/">All articles</a></li>
+          <li><a href="/editorial-policy/">Editorial policy</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="s909df4b">Independent crypto coverage, for information only.</p>
+    <p class="s1bc00f0">© 2026 Crypto Record</p>
+  </div>
+</footer>
+</body>
+</html>
