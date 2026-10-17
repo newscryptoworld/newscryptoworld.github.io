@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why Calldata Changes Invalidate a Signed Swap</title>
+<meta name="description" content="A swap signature covers specific transaction bytes or typed fields; changing calldata can break that authorization or change execution when the signed fields leave it open.">
+<link rel="canonical" href="https://newscryptoworld.github.io/why-a-calldata-change-can-break-a-signed-swap/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#17131b">
+<meta name="author" content="Crypto Record Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Record">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why a Calldata Change Can Break a Signed Swap">
+<meta property="og:description" content="A swap signature covers specific transaction bytes or typed fields; changing calldata can break that authorization or change execution when the signed fields leave it open.">
+<meta property="og:url" content="https://newscryptoworld.github.io/why-a-calldata-change-can-break-a-signed-swap/">
+<meta property="og:image" content="https://newscryptoworld.github.io/assets/covers/why-a-calldata-change-can-break-a-signed-swap-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why a Calldata Change Can Break a Signed Swap"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why a Calldata Change Can Break a Signed Swap">
+<meta name="twitter:description" content="A swap signature covers specific transaction bytes or typed fields; changing calldata can break that authorization or change execution when the signed fields leave it open.">
+<meta property="article:published_time" content="2026-10-17T03:28:46+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s81fa52dae9.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Record" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://newscryptoworld.github.io/why-a-calldata-change-can-break-a-signed-swap/#webpage",
+      "url": "https://newscryptoworld.github.io/why-a-calldata-change-can-break-a-signed-swap/",
+      "name": "Why Calldata Changes Invalidate a Signed Swap",
+      "isPartOf": {
+        "@id": "https://newscryptoworld.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://newscryptoworld.github.io/why-a-calldata-change-can-break-a-signed-swap/#article",
+      "headline": "Why a Calldata Change Can Break a Signed Swap",
+      "isAccessibleForFree": true,
+      "description": "A swap signature covers specific transaction bytes or typed fields; changing calldata can break that authorization or change execution when the signed fields leave it open.",
+      "datePublished": "2026-10-17T03:28:46+00:00",
+      "dateModified": "2026-10-17T03:28:46+00:00",
+      "url": "https://newscryptoworld.github.io/why-a-calldata-change-can-break-a-signed-swap/",
+      "mainEntityOfPage": {
+        "@id": "https://newscryptoworld.github.io/why-a-calldata-change-can-break-a-signed-swap/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "wordCount": 659,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://newscryptoworld.github.io/assets/covers/why-a-calldata-change-can-break-a-signed-swap-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://newscryptoworld.github.io/assets/covers/why-a-calldata-change-can-break-a-signed-swap-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://newscryptoworld.github.io/assets/covers/why-a-calldata-change-can-break-a-signed-swap-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://newscryptoworld.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why a Calldata Change Can Break a Signed Swap",
+          "item": "https://newscryptoworld.github.io/why-a-calldata-change-can-break-a-signed-swap/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://newscryptoworld.github.io/#org",
+      "name": "Crypto Record",
+      "url": "https://newscryptoworld.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://newscryptoworld.github.io/editorial-policy/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://newscryptoworld.github.io/#website",
+      "name": "Crypto Record",
+      "url": "https://newscryptoworld.github.io/",
+      "publisher": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Record reports news on Bitcoin, Ethereum, Solana, DeFi protocols, exchanges, stablecoins, regulation and network upgrades across the crypto market."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s9e43d8a" href="#main">Skip to content</a>
+<header class="s9fcc171">
+  <div class="s1a1f8a9 s8459af5">
+    <a class="s9575b21" href="/">Crypto Record</a>
+    <p class="s888dd1a">Crypto news across every chain</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="s1a1f8a9 s48acf5d">
+  <article class="sd341993">
+    <div class="s8e49568">
+      <p class="s9a9fd2c"><span class="s510c5e3">2026-10-17 03:28 UTC</span><span class="s73262ce">787344</span></p>
+      <h1 class="s3543549">Why a Calldata Change Can Break a Signed Swap</h1>
+<p class="s09cc4bc">A swap signature covers specific transaction bytes or typed fields; changing calldata can break that authorization or change execution when the signed fields leave it open.</p>      <p class="s36b51e3"><span class="s06f7245">Crypto Record Editorial</span><time datetime="2026-10-17T03:28:46+00:00">Oct 17, 2026 · 03:28 UTC</time><span>4 min read</span></p>
+    </div>
+    <figure class="sad7290f"><img width="1200" height="630" fetchpriority="high" class="s6e4f956" src="/assets/covers/why-a-calldata-change-can-break-a-signed-swap.jpg" alt="Why a Calldata Change Can Break a Signed Swap"></figure>
+    <div class="s4cae579"><p>Changing calldata can invalidate a signed swap because the signature may cover the transaction data, or because the contract checks that data against signed terms. Calldata is the input sent to a contract: it names the function and carries its arguments, such as the token pair, amount, route and recipient. The wallet, signature verifier and swap contract each use it in a different way, so the effect depends on what was signed.</p>
+
+<h2>What does a swap signature cover?</h2>
+
+<p>A wallet’s transaction signature covers the transaction as a whole, including its calldata. The wallet encodes the transaction fields into a message and signs its hash. On Ethereum, those fields include the destination contract, value, nonce, chain ID and data. If calldata changes after signing, the hash changes too, so the original signature no longer authorizes that transaction. It is like signing a form that includes an attachment: replacing the attachment changes what was signed.</p>
+
+<p>Calldata can also be part of an off-chain order or authorization signed with typed data. In that case, the signature covers the fields listed in the signed message, which may include a token, amount, recipient, expiry or route. Some protocols also bind a hash of the call data. Others leave some execution details to a router. The signature can remain valid if an unbound field changes, but the contract may still reject the call or execute different instructions.</p>
+
+<p>A route can also cross a bridge, adding a separate set of instructions and costs; the <a href="https://leahdpo570978.blogripley.com/43638377/manta-bridge-for-defi-users-routes-costs-and-risks" rel="noopener">manta bridge</a> guide explains those mechanics in more detail. The same distinction applies: check which parts of a route the signature actually commits to.</p>
+
+<h2>Which calldata changes can cause a problem?</h2>
+
+<p>Changing any byte in a signed transaction’s data changes its signed hash. In a swap call, the data commonly contains a function selector followed by encoded arguments. Those arguments can direct the contract to trade a different token, use a different path, send output to another address or accept a lower minimum amount. A changed selector can call a different function altogether.</p>
+
+<p>With an off-chain order, a change matters when it alters a signed field or a condition the verifier checks. For example, changing the amount may make the order hash fail verification. Changing a route may be allowed if the order signs only the input and minimum output, but only if the contract permits that route and the resulting trade meets the signed limits. A valid signature is not a general approval for every call made with it.</p>
+
+<p>Smart accounts add another layer. They may sign a user operation whose call data specifies one or more contract calls. Their validation rules determine whether the signature covers the full call, a permitted target and function, or a narrower set of conditions. A relayer or bundler can package the operation, but it cannot safely change signed instructions unless the account’s rules allow that change.</p>
+
+<h2>How can you check whether a change is safe?</h2>
+
+<p>Compare the signed message with the call that will be submitted. For a wallet transaction, any edit to calldata means the transaction needs a new signature. For an off-chain order or smart account, inspect the signed fields and the contract’s validation rules; a signature that still verifies does not prove that every execution detail is unchanged.</p>
+
+<ul>
+<li>Check the destination contract and function being called.</li>
+<li>Compare token addresses, amounts, recipient, route and minimum output.</li>
+<li>Check any expiry, nonce, chain ID and value constraints.</li>
+<li>Confirm whether the signature binds the full calldata or only selected terms.</li>
+</ul>
+
+<p>After signing, a wallet or service may rebuild a transaction to adjust fees or routing. Rebuilding can change calldata as well as fee fields, so do not assume the old signature still applies. Review the final call before signing again. The useful rule is simple: a transaction signature authorizes exact transaction data, while an order signature authorizes the fields its verifier checks. Knowing which one you have tells you what a calldata edit can change.</p></div>
+  </article>
+  <aside class="s27e44d1">
+    <h2 class="sa1db085">Related stories</h2>
+    <ul class="s591294b">
+      <li class="s6b549f7"><a href="/same-ticker-different-token-what-a-bridge-actually-moves/">Same Ticker, Different Token: What a Bridge Actually Moves</a></li>
+      <li class="s6b549f7"><a href="/how-bridged-dogecoin-becomes-smart-chain-liquidity/">How Bridged Dogecoin Becomes Smart-Chain Liquidity</a></li>
+      <li class="s6b549f7"><a href="/three-checks-before-bridging-to-a-contract-wallet/">Three checks before bridging to a contract wallet</a></li>
+      <li class="s6b549f7"><a href="/when-is-a-crypto-deposit-usable-on-an-exchange/">When Is a Crypto Deposit Usable on an Exchange?</a></li>
+    </ul>
+  </aside>
+</div>
+</main>
+
+<footer class="s0ee839a">
+  <div class="s1a1f8a9 s4261b21">
+    <div class="se15a721">
+      <p class="saa1fdb2">Crypto Record</p>
+      <nav class="sd1f22b1" aria-label="Site">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">Masthead</a></li>
+          <li><a href="/privacy/">Privacy &amp; terms</a></li>
+          <li><a href="/archive/">All articles</a></li>
+          <li><a href="/editorial-policy/">Editorial policy</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="s909df4b">Independent crypto coverage, for information only.</p>
+    <p class="s1bc00f0">© 2026 Crypto Record</p>
+  </div>
+</footer>
+</body>
+</html>
