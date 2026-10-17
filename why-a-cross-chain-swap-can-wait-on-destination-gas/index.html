@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cross-Chain Swap Pending: How Destination Gas Works</title>
+<meta name="description" content="A cross-chain swap can stay pending after its input arrives because validators still need to observe, execute and fund the destination-chain payout from the quoted output.">
+<link rel="canonical" href="https://newscryptoworld.github.io/why-a-cross-chain-swap-can-wait-on-destination-gas/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#17131b">
+<meta name="author" content="Crypto Record Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Record">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why a Cross-Chain Swap Can Wait on Destination Gas">
+<meta property="og:description" content="A cross-chain swap can stay pending after its input arrives because validators still need to observe, execute and fund the destination-chain payout from the quoted output.">
+<meta property="og:url" content="https://newscryptoworld.github.io/why-a-cross-chain-swap-can-wait-on-destination-gas/">
+<meta property="og:image" content="https://newscryptoworld.github.io/assets/covers/why-a-cross-chain-swap-can-wait-on-destination-gas-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why a Cross-Chain Swap Can Wait on Destination Gas"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why a Cross-Chain Swap Can Wait on Destination Gas">
+<meta name="twitter:description" content="A cross-chain swap can stay pending after its input arrives because validators still need to observe, execute and fund the destination-chain payout from the quoted output.">
+<meta property="article:published_time" content="2026-10-17T04:53:17+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s81fa52dae9.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Record" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://newscryptoworld.github.io/why-a-cross-chain-swap-can-wait-on-destination-gas/#webpage",
+      "url": "https://newscryptoworld.github.io/why-a-cross-chain-swap-can-wait-on-destination-gas/",
+      "name": "Cross-Chain Swap Pending: How Destination Gas Works",
+      "isPartOf": {
+        "@id": "https://newscryptoworld.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://newscryptoworld.github.io/why-a-cross-chain-swap-can-wait-on-destination-gas/#article",
+      "headline": "Why a Cross-Chain Swap Can Wait on Destination Gas",
+      "isAccessibleForFree": true,
+      "description": "A cross-chain swap can stay pending after its input arrives because validators still need to observe, execute and fund the destination-chain payout from the quoted output.",
+      "datePublished": "2026-10-17T04:53:17+00:00",
+      "dateModified": "2026-10-17T04:53:17+00:00",
+      "url": "https://newscryptoworld.github.io/why-a-cross-chain-swap-can-wait-on-destination-gas/",
+      "mainEntityOfPage": {
+        "@id": "https://newscryptoworld.github.io/why-a-cross-chain-swap-can-wait-on-destination-gas/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "wordCount": 676,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://newscryptoworld.github.io/assets/covers/why-a-cross-chain-swap-can-wait-on-destination-gas-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://newscryptoworld.github.io/assets/covers/why-a-cross-chain-swap-can-wait-on-destination-gas-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://newscryptoworld.github.io/assets/covers/why-a-cross-chain-swap-can-wait-on-destination-gas-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://newscryptoworld.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why a Cross-Chain Swap Can Wait on Destination Gas",
+          "item": "https://newscryptoworld.github.io/why-a-cross-chain-swap-can-wait-on-destination-gas/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://newscryptoworld.github.io/#org",
+      "name": "Crypto Record",
+      "url": "https://newscryptoworld.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://newscryptoworld.github.io/editorial-policy/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://newscryptoworld.github.io/#website",
+      "name": "Crypto Record",
+      "url": "https://newscryptoworld.github.io/",
+      "publisher": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Record reports news on Bitcoin, Ethereum, Solana, DeFi protocols, exchanges, stablecoins, regulation and network upgrades across the crypto market."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s9e43d8a" href="#main">Skip to content</a>
+<header class="s9fcc171">
+  <div class="s1a1f8a9 s8459af5">
+    <a class="s9575b21" href="/">Crypto Record</a>
+    <p class="s888dd1a">Crypto news across every chain</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="s1a1f8a9 s48acf5d">
+  <article class="sd341993">
+    <div class="s8e49568">
+      <p class="s9a9fd2c"><span class="s510c5e3">2026-10-17 04:53 UTC</span><span class="s73262ce">6985a7</span></p>
+      <h1 class="s3543549">Why a Cross-Chain Swap Can Wait on Destination Gas</h1>
+<p class="s09cc4bc">A cross-chain swap can stay pending after its input arrives because validators still need to observe, execute and fund the destination-chain payout from the quoted output.</p>      <p class="s36b51e3"><span class="s06f7245">Crypto Record Editorial</span><time datetime="2026-10-17T04:53:17+00:00">Oct 17, 2026 · 04:53 UTC</time><span>4 min read</span></p>
+    </div>
+    <figure class="sad7290f"><img width="1200" height="630" fetchpriority="high" class="s6e4f956" src="/assets/covers/why-a-cross-chain-swap-can-wait-on-destination-gas.jpg" alt="Why a Cross-Chain Swap Can Wait on Destination Gas"></figure>
+    <div class="s4cae579"><p>A cross-chain swap can remain pending after your deposit arrives because the network still has to confirm the input, execute the exchange and send the output on another blockchain. In a THORChain swap, the destination-chain gas for that final send is paid from the swap’s output, then deducted as an outbound fee. You generally do not need to keep the destination coin in your wallet just to receive the swap; you may need it later to make another transaction.</p>
+
+<h2>What happens after the input transaction?</h2>
+
+<p>First, your wallet broadcasts an input transaction on the source chain. You pay that chain’s fee, such as Bitcoin’s transaction fee or Ethereum’s gas. The transaction sends your asset to a vault address controlled collectively by THORChain validators.</p>
+
+<p>Validators monitor the source chain and record the deposit once it meets the network’s confirmation requirements. THORChain then processes the swap through its liquidity pools. For many swaps between two assets other than RUNE, the protocol routes value through pools paired with RUNE. This is internal accounting: you do not need to receive or handle RUNE yourself.</p>
+
+<p>Next, the network schedules an outbound transaction. Validators use the destination chain’s vault to send the chosen asset to your specified address. That transaction consumes destination-chain gas, just as any other transaction on that chain would. For the wider routing and verification steps, see the fuller <a href="https://web3.mataroa.blog/blog/thor-swap-how-to-route-and-verify-a-cross-chain-swap/" rel="noopener">thor swap</a> guide; this piece focuses on why the final delivery can still be pending.</p>
+
+<h2>Who pays the destination-chain gas?</h2>
+
+<p>The outbound transaction is broadcast by the network’s vault, and its gas is covered from funds associated with that vault. THORChain charges an outbound fee against the swap output to account for destination-chain gas and protocol overhead. The amount you receive is therefore lower than the amount available before fees.</p>
+
+<p>Think of it like a parcel service paying the postage at dispatch and including that cost in the delivery price. The analogy stops there: a blockchain payout is a transaction signed by a vault, and its fee depends on the destination chain’s conditions and the protocol’s fee calculation.</p>
+
+<p>This is different from paying gas out of your own destination wallet. If you swap into ETH, for example, you can receive ETH at an Ethereum address without already holding ETH there for the outbound transaction. But if the received asset is a token, you will usually need the chain’s native gas asset to later transfer or use that token. The swap’s outbound fee and your next wallet transaction are separate costs.</p>
+
+<h2>Why can the swap stay pending, and what should I check?</h2>
+
+<p>“Pending” can describe several stages, so the label alone does not show where the delay is. The source transaction may still be waiting for confirmation; validators may not yet have observed it; the swap may be processing; or the outbound transaction may be scheduled but not yet confirmed on the destination chain. Congestion or a chain pause can also delay delivery.</p>
+
+<p>Use the transaction ID to check each leg in a suitable block explorer or the protocol’s transaction-status view. Look for the source-chain deposit first, then the swap record, then an outbound transaction and its destination-chain confirmation. These are separate records, and the destination transfer may have a different transaction ID from the original deposit.</p>
+
+<ul>
+<li>Confirm that the source transaction is confirmed and its destination address matches the address you entered.</li>
+<li>Check the quoted output, outbound fee and minimum receive amount. The fee is taken from the output, not supplied later from your destination wallet.</li>
+<li>Find out whether the destination chain or asset is paused before interpreting a delay as a failed swap.</li>
+<li>Do not send the input again just because the interface still says pending. First establish whether the original deposit was observed and whether an outbound transaction exists.</li>
+</ul>
+
+<p>A pending cross-chain swap is a sequence in progress, not one transaction waiting on a single chain. Follow the deposit, swap and payout separately. If the input is confirmed but no payout appears, the status of the outbound leg—and the destination chain’s state—will tell you what is still outstanding.</p></div>
+  </article>
+  <aside class="s27e44d1">
+    <h2 class="sa1db085">Related stories</h2>
+    <ul class="s591294b">
+      <li class="s6b549f7"><a href="/why-a-calldata-change-can-break-a-signed-swap/">Why a Calldata Change Can Break a Signed Swap</a></li>
+      <li class="s6b549f7"><a href="/same-ticker-different-token-what-a-bridge-actually-moves/">Same Ticker, Different Token: What a Bridge Actually Moves</a></li>
+      <li class="s6b549f7"><a href="/how-bridged-dogecoin-becomes-smart-chain-liquidity/">How Bridged Dogecoin Becomes Smart-Chain Liquidity</a></li>
+      <li class="s6b549f7"><a href="/three-checks-before-bridging-to-a-contract-wallet/">Three checks before bridging to a contract wallet</a></li>
+    </ul>
+  </aside>
+</div>
+</main>
+
+<footer class="s0ee839a">
+  <div class="s1a1f8a9 s4261b21">
+    <div class="se15a721">
+      <p class="saa1fdb2">Crypto Record</p>
+      <nav class="sd1f22b1" aria-label="Site">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">Masthead</a></li>
+          <li><a href="/privacy/">Privacy &amp; terms</a></li>
+          <li><a href="/archive/">All articles</a></li>
+          <li><a href="/editorial-policy/">Editorial policy</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="s909df4b">Independent crypto coverage, for information only.</p>
+    <p class="s1bc00f0">© 2026 Crypto Record</p>
+  </div>
+</footer>
+</body>
+</html>
