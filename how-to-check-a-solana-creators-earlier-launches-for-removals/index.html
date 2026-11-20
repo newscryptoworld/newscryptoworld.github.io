@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to check whether a Solana creator removed liquidity</title>
+<meta name="description" content="To check whether a Solana token creator removed liquidity from earlier tokens, trace creator-linked pools and compare withdrawal instructions, amounts, times and destinations.">
+<link rel="canonical" href="https://newscryptoworld.github.io/how-to-check-a-solana-creators-earlier-launches-for-removals/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#17131b">
+<meta name="author" content="Crypto Record Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Record">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How to check a Solana creator’s earlier launches for removals">
+<meta property="og:description" content="To check whether a Solana token creator removed liquidity from earlier tokens, trace creator-linked pools and compare withdrawal instructions, amounts, times and destinations.">
+<meta property="og:url" content="https://newscryptoworld.github.io/how-to-check-a-solana-creators-earlier-launches-for-removals/">
+<meta property="og:image" content="https://newscryptoworld.github.io/assets/covers/how-to-check-a-solana-creators-earlier-launches-for-removals-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How to check a Solana creator’s earlier launches for removals"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to check a Solana creator’s earlier launches for removals">
+<meta name="twitter:description" content="To check whether a Solana token creator removed liquidity from earlier tokens, trace creator-linked pools and compare withdrawal instructions, amounts, times and destinations.">
+<meta property="article:published_time" content="2026-11-20T14:38:44+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s81fa52dae9.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Record" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://newscryptoworld.github.io/how-to-check-a-solana-creators-earlier-launches-for-removals/#webpage",
+      "url": "https://newscryptoworld.github.io/how-to-check-a-solana-creators-earlier-launches-for-removals/",
+      "name": "How to check whether a Solana creator removed liquidity",
+      "isPartOf": {
+        "@id": "https://newscryptoworld.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://newscryptoworld.github.io/how-to-check-a-solana-creators-earlier-launches-for-removals/#article",
+      "headline": "How to check a Solana creator’s earlier launches for removals",
+      "isAccessibleForFree": true,
+      "description": "To check whether a Solana token creator removed liquidity from earlier tokens, trace creator-linked pools and compare withdrawal instructions, amounts, times and destinations.",
+      "datePublished": "2026-11-20T14:38:44+00:00",
+      "dateModified": "2026-11-20T14:38:44+00:00",
+      "url": "https://newscryptoworld.github.io/how-to-check-a-solana-creators-earlier-launches-for-removals/",
+      "mainEntityOfPage": {
+        "@id": "https://newscryptoworld.github.io/how-to-check-a-solana-creators-earlier-launches-for-removals/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "wordCount": 714,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://newscryptoworld.github.io/assets/covers/how-to-check-a-solana-creators-earlier-launches-for-removals-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://newscryptoworld.github.io/assets/covers/how-to-check-a-solana-creators-earlier-launches-for-removals-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://newscryptoworld.github.io/assets/covers/how-to-check-a-solana-creators-earlier-launches-for-removals-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://newscryptoworld.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How to check a Solana creator’s earlier launches for removals",
+          "item": "https://newscryptoworld.github.io/how-to-check-a-solana-creators-earlier-launches-for-removals/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://newscryptoworld.github.io/#org",
+      "name": "Crypto Record",
+      "url": "https://newscryptoworld.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://newscryptoworld.github.io/editorial-policy/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://newscryptoworld.github.io/#website",
+      "name": "Crypto Record",
+      "url": "https://newscryptoworld.github.io/",
+      "publisher": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Record reports news on Bitcoin, Ethereum, Solana, DeFi protocols, exchanges, stablecoins, regulation and network upgrades across the crypto market."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s9e43d8a" href="#main">Skip to content</a>
+<header class="s9fcc171">
+  <div class="s1a1f8a9 s8459af5">
+    <a class="s9575b21" href="/">Crypto Record</a>
+    <p class="s888dd1a">Crypto news across every chain</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="s1a1f8a9 s48acf5d">
+  <article class="sd341993">
+    <div class="s8e49568">
+      <p class="s9a9fd2c"><span class="s510c5e3">2026-11-20 14:38 UTC</span><span class="s73262ce">0f4952</span></p>
+      <h1 class="s3543549">How to check a Solana creator’s earlier launches for removals</h1>
+<p class="s09cc4bc">To check whether a Solana token creator removed liquidity from earlier tokens, trace creator-linked pools and compare withdrawal instructions, amounts, times and destinations.</p>      <p class="s36b51e3"><span class="s06f7245">Crypto Record Editorial</span><time datetime="2026-11-20T14:38:44+00:00">Nov 20, 2026 · 14:38 UTC</time><span>4 min read</span></p>
+    </div>
+    <figure class="sad7290f"><img width="1200" height="630" fetchpriority="high" class="s6e4f956" src="/assets/covers/how-to-check-a-solana-creators-earlier-launches-for-removals.jpg" alt="How to check a Solana creator’s earlier launches for removals"></figure>
+    <div class="s4cae579"><p>A Solana token creator’s earlier launches can be checked by tracing creator-attributed mints to their pools, then inspecting withdrawal transactions and destinations. Transaction history supplies the evidence for a repeated pattern: each recorded incident ties a mint and pool to a time, signature, actor and liquidity reduction.</p>
+<h2>What should you have ready?</h2>
+<p>For a Solana creator-history review, have the current mint, the Token creator wallet, Solscan access and a place to record signatures ready. Start with the current mint because its creation transaction can help confirm which wallet launched it.</p>
+<p>Use the creator wallet as a lead, then substantiate each earlier launch through its creation transaction. A wallet appearing near a token is not enough to attribute the launch; record the transaction that connects the wallet to the mint. Keep the evidence tied to each mint so similar names do not blur separate tokens.</p>
+<h2>How do you trace earlier launches and liquidity removals?</h2>
+<ol>
+<li><strong>Attribute launches.</strong> Starting from the current mint, inspect its creation transaction in Solscan and identify the Token creator wallet. Follow that wallet’s transaction history to candidate earlier mints, then open each mint’s creation transaction. The visible result is a list of launches with a transaction-based link to the creator wallet; leave out candidates without that link.</li>
+<li><strong>Locate each mint’s pools.</strong> For every attributed mint, find its Raydium pools and record the pool address. Then identify the creator-linked liquidity position and the wallet or authority controlling it. Raydium CPMM positions use LP tokens; CLMM positions use position NFTs. Follow those assets and their associated transactions to connect a position to the creator wallet. The result is a pool-and-position record for each launch.</li>
+<li><strong>Inspect withdrawal transactions.</strong> Open successful transactions associated with each position and read the instructions, token balance changes, actor and recipient. Solana transaction metadata includes instructions and token balance changes, which helps connect the operation to the assets moved. Record the signature and time alongside the liquidity reduction. A transfer after withdrawal can show where the withdrawn assets went, so follow subsequent transfers and note their destinations.</li>
+<li><strong>Separate CLMM fee collection from liquidity removal.</strong> Raydium CLMM decrease-liquidity calls can collect fees while reducing liquidity by zero. Read the liquidity parameter in the instruction before counting a transaction as a withdrawal: a zero reduction is fee collection, while a positive reduction records liquidity taken out. The [Raydium instructions](https://github.com/raydium-io/raydium-docs-v1/blob/main/products/clmm/instructions.mdx) describe the instruction distinction. This check keeps fee collection from inflating the removal count.</li>
+<li><strong>Compare launches and close the record.</strong> For each pool, compare successful reductions, remaining liquidity and later deposits. A withdrawal followed by a deposit into another pool may be part of a migration; trace the destination pool and record the redeposit before judging whether liquidity was removed from the project. The [Solana getTransaction documentation](https://solana.com/docs/rpc/http/gettransaction) explains the transaction evidence available for review. The task is complete when each counted incident has a mint, pool, time, signature, actor and liquidity reduction in your evidence table.</li>
+</ol>
+<p>Repeated positive reductions across attributed launches, especially where the record shows no corresponding redeposit and tracks assets to a destination, make a pattern easier to document. A fuller review takes more time as the wallet’s history and pool count grow. For a skeptical buyer considering meaningful exposure, that time can buy a clearer comparison of removals, retained liquidity and redeposits; a quick scan is less work but leaves more of the history unexamined.</p>
+<h2>What if liquidity moved during a pool migration?</h2>
+<p>Trace the destination pool and redeposit. Match the outgoing assets and timing to activity in the new pool, then record both sides of the move so the history shows whether liquidity was transferred or remained withdrawn.</p>
+<h2>What if the creator has no previous launches?</h2>
+<p>Record the search coverage and the limited history: which wallet you traced, which transactions and pools you reviewed, and the earliest activity visible in that review. That gives the evidence table a clear boundary.</p>
+<p>A rugcheck reviews a token for warning signs that could point to a scam or rug pull, while a transaction table documents a creator-linked liquidity history. The <a href="https://graph.org/Does-Rugcheck-Replace-a-Smart-Contract-Audit-for-Token-Buyers-11-17" rel="noopener">solana token safety</a> topic connects to that review because earlier pool activity is one piece of the token’s risk context.</p>
+<p>Keep the table focused on attributable transactions and positive liquidity reductions. That is the documented pattern a buyer can compare across launches.</p></div>
+  </article>
+  <aside class="s27e44d1">
+    <h2 class="sa1db085">Related stories</h2>
+    <ul class="s591294b">
+      <li class="s6b549f7"><a href="/us-wins-authority-to-seize-or-restrain-1-2bn-in-binance-crypto/">US wins authority to seize or restrain $1.2bn in Binance crypto</a></li>
+      <li class="s6b549f7"><a href="/eth-or-usdc-to-berachain-how-your-use-decides/">ETH or USDC to Berachain: How Your Use Decides</a></li>
+      <li class="s6b549f7"><a href="/soft-rug-vs-hard-rug-crypto-the-signs-to-check/">Soft rug vs hard rug crypto: the signs to check</a></li>
+      <li class="s6b549f7"><a href="/dai-vs-usds-which-should-a-new-lender-hold/">DAI vs USDS: Which Should a New Lender Hold?</a></li>
+    </ul>
+  </aside>
+</div>
+</main>
+
+<footer class="s0ee839a">
+  <div class="s1a1f8a9 s4261b21">
+    <div class="se15a721">
+      <p class="saa1fdb2">Crypto Record</p>
+      <nav class="sd1f22b1" aria-label="Site">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">Masthead</a></li>
+          <li><a href="/privacy/">Privacy &amp; terms</a></li>
+          <li><a href="/archive/">All articles</a></li>
+          <li><a href="/editorial-policy/">Editorial policy</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="s909df4b">Independent crypto coverage, for information only.</p>
+    <p class="s1bc00f0">© 2026 Crypto Record</p>
+  </div>
+</footer>
+</body>
+</html>
