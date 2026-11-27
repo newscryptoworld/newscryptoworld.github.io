@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Verify Protocol-Owned Liquidity Fees On-Chain</title>
+<meta name="description" content="Learn how to verify protocol-owned liquidity fees on-chain by matching a pair’s LP-token mint to feeTo at the event block, even if the recipient later changed.">
+<link rel="canonical" href="https://newscryptoworld.github.io/how-to-verify-protocol-fees-in-a-pair/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#17131b">
+<meta name="author" content="Crypto Record Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Record">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How to Verify Protocol Fees in a Pair">
+<meta property="og:description" content="Learn how to verify protocol-owned liquidity fees on-chain by matching a pair’s LP-token mint to feeTo at the event block, even if the recipient later changed.">
+<meta property="og:url" content="https://newscryptoworld.github.io/how-to-verify-protocol-fees-in-a-pair/">
+<meta property="og:image" content="https://newscryptoworld.github.io/assets/covers/how-to-verify-protocol-fees-in-a-pair-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How to Verify Protocol Fees in a Pair"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Verify Protocol Fees in a Pair">
+<meta name="twitter:description" content="Learn how to verify protocol-owned liquidity fees on-chain by matching a pair’s LP-token mint to feeTo at the event block, even if the recipient later changed.">
+<meta property="article:published_time" content="2026-11-27T21:05:55+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s81fa52dae9.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Record" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://newscryptoworld.github.io/how-to-verify-protocol-fees-in-a-pair/#webpage",
+      "url": "https://newscryptoworld.github.io/how-to-verify-protocol-fees-in-a-pair/",
+      "name": "How to Verify Protocol-Owned Liquidity Fees On-Chain",
+      "isPartOf": {
+        "@id": "https://newscryptoworld.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://newscryptoworld.github.io/how-to-verify-protocol-fees-in-a-pair/#article",
+      "headline": "How to Verify Protocol Fees in a Pair",
+      "isAccessibleForFree": true,
+      "description": "Learn how to verify protocol-owned liquidity fees on-chain by matching a pair’s LP-token mint to feeTo at the event block, even if the recipient later changed.",
+      "datePublished": "2026-11-27T21:05:55+00:00",
+      "dateModified": "2026-11-27T21:05:55+00:00",
+      "url": "https://newscryptoworld.github.io/how-to-verify-protocol-fees-in-a-pair/",
+      "mainEntityOfPage": {
+        "@id": "https://newscryptoworld.github.io/how-to-verify-protocol-fees-in-a-pair/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "wordCount": 656,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://newscryptoworld.github.io/assets/covers/how-to-verify-protocol-fees-in-a-pair-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://newscryptoworld.github.io/assets/covers/how-to-verify-protocol-fees-in-a-pair-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://newscryptoworld.github.io/assets/covers/how-to-verify-protocol-fees-in-a-pair-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://newscryptoworld.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How to Verify Protocol Fees in a Pair",
+          "item": "https://newscryptoworld.github.io/how-to-verify-protocol-fees-in-a-pair/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://newscryptoworld.github.io/#org",
+      "name": "Crypto Record",
+      "url": "https://newscryptoworld.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://newscryptoworld.github.io/editorial-policy/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://newscryptoworld.github.io/#website",
+      "name": "Crypto Record",
+      "url": "https://newscryptoworld.github.io/",
+      "publisher": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Record reports news on Bitcoin, Ethereum, Solana, DeFi protocols, exchanges, stablecoins, regulation and network upgrades across the crypto market."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s9e43d8a" href="#main">Skip to content</a>
+<header class="s9fcc171">
+  <div class="s1a1f8a9 s8459af5">
+    <a class="s9575b21" href="/">Crypto Record</a>
+    <p class="s888dd1a">Crypto news across every chain</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="s1a1f8a9 s48acf5d">
+  <article class="sd341993">
+    <div class="s8e49568">
+      <p class="s9a9fd2c"><span class="s510c5e3">2026-11-27 21:05 UTC</span><span class="s73262ce">f1b477</span></p>
+      <h1 class="s3543549">How to Verify Protocol Fees in a Pair</h1>
+<p class="s09cc4bc">Learn how to verify protocol-owned liquidity fees on-chain by matching a pair’s LP-token mint to feeTo at the event block, even if the recipient later changed.</p>      <p class="s36b51e3"><span class="s06f7245">Crypto Record Editorial</span><time datetime="2026-11-27T21:05:55+00:00">Nov 27, 2026 · 21:05 UTC</time><span>4 min read</span></p>
+    </div>
+    <figure class="sad7290f"><img width="1200" height="630" fetchpriority="high" class="s6e4f956" src="/assets/covers/how-to-verify-protocol-fees-in-a-pair.jpg" alt="How to Verify Protocol Fees in a Pair"></figure>
+    <div class="s4cae579"><p>To verify protocol-owned liquidity fees in Fraxswap, match the pair’s LP-token mint to the factory’s feeTo recipient at the event block; the shares are minted during a liquidity operation, while swap fees generally stay in pool reserves.</p>
+<p>Say you are investigating a transaction for one token pair. The pair contract records liquidity activity, and its factory identifies the recipient set in feeTo. That recipient can change, so a current feeTo value may not explain an older event. Understanding <a href="https://newscryptoworld.github.io/how-does-protocol-owned-liquidity-work-fees-stay-in-treasury/">how Fraxswap protocol-owned liquidity works</a> helps you interpret what the minted shares represent: a protocol-owned LP position, rather than swap fees sent to a wallet on every trade.</p>
+<h2>How do you trace a pair’s protocol-fee mint to its recipient?</h2>
+<p>Trace the pair, factory setting, and LP-token events at the same block to verify the recipient and amount.</p>
+<ol>
+<li><strong>Choose the chain and event.</strong> Start with the chain, token pair, and transaction or block you want to investigate. You need the pair and factory addresses, plus an explorer or RPC endpoint that can read the relevant block.</li>
+<li><strong>Confirm the pair’s factory.</strong> Open the pair contract on the correct chain and identify its factory. Confirm that the pair belongs to that factory, using the factory’s pair lookup for the two tokens where available. Addresses can differ across chains, so match the chain as well as the token pair.</li>
+<li><strong>Read feeTo at the event block.</strong> Open the factory’s contract read interface or query it through an RPC call at the block being checked. Record the feeTo address returned for that historical block. Do not substitute the factory’s current setting when investigating a past event: the recipient may have changed since then.</li>
+<li><strong>Inspect the liquidity transaction.</strong> Open the pair’s transaction and find its Mint or Burn event. In the LP-token Transfer events, look for a mint from the zero address to the feeTo recipient recorded at that block. Note the LP-token amount. The pair’s liquidity event and the LP-token mint together connect the operation to the recipient.</li>
+</ol>
+<p>For an illustrative case, suppose a pair’s Mint event and LP-token Transfer appear in the same transaction, and the transfer goes from the zero address to the feeTo address returned for that block. The trail links the pair, the factory setting, and the LP shares minted to the recipient. The amount can vary with the pool and event; use the amount recorded in that transaction rather than assuming a fixed fee.</p>
+<p>Before tracing the events, you have a pair and a transaction to investigate, but not a verified recipient or share amount. Afterward, those details are visible together in the transaction trail. The investigation changes what you can confirm; it does not itself change pool reserves or the LP tokens recorded by the contracts.</p>
+<p>That distinction matters because protocol fees are LP shares, while swap fees generally remain in pool reserves. Fraxswap V2 pair contracts mint protocol-fee liquidity during mint or burn operations when fees are enabled. They do not send a token transfer to feeTo on every swap. A swap may affect reserves without producing the protocol-fee LP-token mint you are tracing.</p>
+<h2>What does feeTo mean in an AMM?</h2>
+<p>In an AMM, feeTo is the factory’s recipient setting for protocol-fee LP shares. Read it at the same block as the pair’s liquidity event to identify the address that should receive those shares. If that historical value differs from today’s value, use the historical one for your investigation.</p>
+<h2>How do I find LP-token mint events in a block explorer?</h2>
+<p>Open the pair’s liquidity transaction and inspect its event logs for Mint or Burn and LP-token Transfer events. The transfer from the zero address identifies newly minted LP tokens; compare its recipient with feeTo at that block. Your task is complete when the pair, event, historical recipient, and LP-token amount are visible in one transaction trail. Save the transaction hash and block number so you can return to the same evidence or share it with DAO contributors.</p></div>
+  </article>
+  <aside class="s27e44d1">
+    <h2 class="sa1db085">Related stories</h2>
+    <ul class="s591294b">
+      <li class="s6b549f7"><a href="/kucoin-to-end-four-monero-markets-after-58-volume-share/">KuCoin to End Four Monero Markets After 58% Volume Share</a></li>
+      <li class="s6b549f7"><a href="/how-does-protocol-owned-liquidity-work-fees-stay-in-treasury/">How does protocol-owned liquidity work: Fees stay in treasury</a></li>
+      <li class="s6b549f7"><a href="/how-to-complete-a-tron-swap-and-verify-the-result/">How to Complete a TRON Swap and Verify the Result</a></li>
+      <li class="s6b549f7"><a href="/ethereum-to-sui-waits-on-finality-the-return-needs-an-eth-claim/">Ethereum-to-Sui waits on finality; the return needs an ETH claim</a></li>
+    </ul>
+  </aside>
+</div>
+</main>
+
+<footer class="s0ee839a">
+  <div class="s1a1f8a9 s4261b21">
+    <div class="se15a721">
+      <p class="saa1fdb2">Crypto Record</p>
+      <nav class="sd1f22b1" aria-label="Site">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">Masthead</a></li>
+          <li><a href="/privacy/">Privacy &amp; terms</a></li>
+          <li><a href="/archive/">All articles</a></li>
+          <li><a href="/editorial-policy/">Editorial policy</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="s909df4b">Independent crypto coverage, for information only.</p>
+    <p class="s1bc00f0">© 2026 Crypto Record</p>
+  </div>
+</footer>
+</body>
+</html>
