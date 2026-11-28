@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Transaction hash vs message ID in bridge transfers explained</title>
+<meta name="description" content="Transaction hash vs message ID in bridge transfers: the hash identifies a transaction on one chain; the message ID links it to the destination transaction.">
+<link rel="canonical" href="https://newscryptoworld.github.io/transaction-hash-vs-message-id-how-bridge-transfers-link/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#17131b">
+<meta name="author" content="Crypto Record Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Record">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Transaction hash vs message ID: how bridge transfers link">
+<meta property="og:description" content="Transaction hash vs message ID in bridge transfers: the hash identifies a transaction on one chain; the message ID links it to the destination transaction.">
+<meta property="og:url" content="https://newscryptoworld.github.io/transaction-hash-vs-message-id-how-bridge-transfers-link/">
+<meta property="og:image" content="https://newscryptoworld.github.io/assets/covers/transaction-hash-vs-message-id-how-bridge-transfers-link-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Transaction hash vs message ID: how bridge transfers link"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Transaction hash vs message ID: how bridge transfers link">
+<meta name="twitter:description" content="Transaction hash vs message ID in bridge transfers: the hash identifies a transaction on one chain; the message ID links it to the destination transaction.">
+<meta property="article:published_time" content="2026-11-28T05:14:14+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s81fa52dae9.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Record" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://newscryptoworld.github.io/transaction-hash-vs-message-id-how-bridge-transfers-link/#webpage",
+      "url": "https://newscryptoworld.github.io/transaction-hash-vs-message-id-how-bridge-transfers-link/",
+      "name": "Transaction hash vs message ID in bridge transfers explained",
+      "isPartOf": {
+        "@id": "https://newscryptoworld.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://newscryptoworld.github.io/transaction-hash-vs-message-id-how-bridge-transfers-link/#article",
+      "headline": "Transaction hash vs message ID: how bridge transfers link",
+      "isAccessibleForFree": true,
+      "description": "Transaction hash vs message ID in bridge transfers: the hash identifies a transaction on one chain; the message ID links it to the destination transaction.",
+      "datePublished": "2026-11-28T05:14:14+00:00",
+      "dateModified": "2026-11-28T05:14:14+00:00",
+      "url": "https://newscryptoworld.github.io/transaction-hash-vs-message-id-how-bridge-transfers-link/",
+      "mainEntityOfPage": {
+        "@id": "https://newscryptoworld.github.io/transaction-hash-vs-message-id-how-bridge-transfers-link/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "wordCount": 579,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://newscryptoworld.github.io/assets/covers/transaction-hash-vs-message-id-how-bridge-transfers-link-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://newscryptoworld.github.io/assets/covers/transaction-hash-vs-message-id-how-bridge-transfers-link-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://newscryptoworld.github.io/assets/covers/transaction-hash-vs-message-id-how-bridge-transfers-link-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://newscryptoworld.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Transaction hash vs message ID: how bridge transfers link",
+          "item": "https://newscryptoworld.github.io/transaction-hash-vs-message-id-how-bridge-transfers-link/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://newscryptoworld.github.io/#org",
+      "name": "Crypto Record",
+      "url": "https://newscryptoworld.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://newscryptoworld.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://newscryptoworld.github.io/editorial-policy/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://newscryptoworld.github.io/#website",
+      "name": "Crypto Record",
+      "url": "https://newscryptoworld.github.io/",
+      "publisher": {
+        "@id": "https://newscryptoworld.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Record reports news on Bitcoin, Ethereum, Solana, DeFi protocols, exchanges, stablecoins, regulation and network upgrades across the crypto market."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s9e43d8a" href="#main">Skip to content</a>
+<header class="s9fcc171">
+  <div class="s1a1f8a9 s8459af5">
+    <a class="s9575b21" href="/">Crypto Record</a>
+    <p class="s888dd1a">Crypto news across every chain</p>
+  </div>
+</header>
+
+<main id="main">
+<div class="s1a1f8a9 s48acf5d">
+  <article class="sd341993">
+    <div class="s8e49568">
+      <p class="s9a9fd2c"><span class="s510c5e3">2026-11-28 05:14 UTC</span><span class="s73262ce">24b636</span></p>
+      <h1 class="s3543549">Transaction hash vs message ID: how bridge transfers link</h1>
+<p class="s09cc4bc">Transaction hash vs message ID in bridge transfers: the hash identifies a transaction on one chain; the message ID links it to the destination transaction.</p>      <p class="s36b51e3"><span class="s06f7245">Crypto Record Editorial</span><time datetime="2026-11-28T05:14:14+00:00">Nov 28, 2026 · 05:14 UTC</time><span>3 min read</span></p>
+    </div>
+    <figure class="sad7290f"><img width="1200" height="630" fetchpriority="high" class="s6e4f956" src="/assets/covers/transaction-hash-vs-message-id-how-bridge-transfers-link.jpg" alt="Transaction hash vs message ID: how bridge transfers link"></figure>
+    <div class="s4cae579"><p>A transaction hash identifies one transaction on one blockchain; a message ID identifies the cross-chain message connecting the source transaction to its destination transaction. A bridge transfer spans two chains, so it has a source hash and a destination hash, while the message ties those transactions to the same transfer.</p>
+<p>Think of the hashes as the receipts from two separate stops, and the message ID as the reference connecting them. The source transaction records the burn or lock of tokens; the destination transaction records their mint or release. For a <a href="https://digitalcryptonews.github.io/exchange-or-bridge-to-move-usdc-to-another-chain/" rel="noopener">USDC cross-chain transfer</a>, that distinction helps explain why a USDC bridge can show more than one transaction hash for a single transfer.</p>
+<h2>What each identifier points to</h2>
+<p>A transaction hash points to one transaction on one chain. It lets an explorer locate that transaction and its details, such as the contract activity recorded there. It does not, by itself, name the related transaction on another chain.</p>
+<p>A message ID points to the cross-chain instruction or message that the bridge carries between chains. The bridge uses that message to connect the source-side action with the destination-side action. The exact identifier depends on the bridge protocol, so “message ID” is a general idea rather than one universal format.</p>
+<p>The distinction matters when one source transaction emits several messages. The hash identifies the whole transaction, which may include multiple bridge-related actions. A message ID, or a protocol’s sequence number, singles out one of those messages. That makes it a more precise reference for one transfer when the source hash alone could match several.</p>
+<p>Bridge explorers often let you enter the source hash and resolve it to a message, then show the corresponding destination transaction. In that view, the hash is the starting point on the source chain; the message is the link across chains; and the destination hash is the record of what happened on arrival.</p>
+<h2>How it looks in CCTP and Wormhole</h2>
+<p>In Circle CCTP, a USDC bridge transfer from Ethereum to Solana starts with a source transaction on Ethereum. That transaction burns USDC and emits a <strong>MessageSent</strong> event containing the message. Circle’s attestation service signs the message, and the destination-side process uses it to mint USDC on Solana. The Solana transaction has its own signature.</p>
+<p>So the Ethereum hash identifies the source transaction, the attested message connects the source action to the destination action, and the Solana signature identifies the mint transaction. They refer to different parts of one transfer. Circle’s CCTP documentation describes the MessageSent event and attestation flow; the message is what lets the destination process act on the source event.</p>
+<p>Wormhole uses a different identifier structure. A <strong>VAA</strong>—a signed message—can be identified by its emitter chain, emitter address, and sequence number. Wormholescan uses those details to distinguish a particular message. The sequence number helps pick out one message even when multiple messages originate from the same emitter; the source transaction hash still identifies the transaction that recorded the emission.</p>
+<p>That difference is why a Wormhole VAA is not simply another name for a transaction hash. The hash locates an on-chain transaction. The VAA’s identifying fields locate a cross-chain message. Wormhole documentation describes VAAs through their emitter chain, emitter address, and sequence number.</p>
+<p>When tracking a transfer, use the source hash to find the source-chain transaction, then use the message ID or protocol-specific sequence to identify the exact cross-chain message. The destination hash or signature identifies the transaction that completed the transfer on the other chain.</p></div>
+  </article>
+  <aside class="s27e44d1">
+    <h2 class="sa1db085">Related stories</h2>
+    <ul class="s591294b">
+      <li class="s6b549f7"><a href="/what-happens-to-my-deposit-if-a-vault-is-paused-how-to-exit/">What happens to my deposit if a vault is paused? How to exit</a></li>
+      <li class="s6b549f7"><a href="/beefy-app-why-your-wallet-will-not-connect/">Beefy app: Why your wallet will not connect</a></li>
+      <li class="s6b549f7"><a href="/single-sided-staking-vs-lp-token-staking-choose-your-risk-layers/">Single-sided staking vs LP token staking: choose your risk layers</a></li>
+      <li class="s6b549f7"><a href="/timelock-in-defi-what-the-delay-actually-protects/">Timelock in DeFi: What the Delay Actually Protects</a></li>
+    </ul>
+  </aside>
+</div>
+</main>
+
+<footer class="s0ee839a">
+  <div class="s1a1f8a9 s4261b21">
+    <div class="se15a721">
+      <p class="saa1fdb2">Crypto Record</p>
+      <nav class="sd1f22b1" aria-label="Site">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">Masthead</a></li>
+          <li><a href="/privacy/">Privacy &amp; terms</a></li>
+          <li><a href="/archive/">All articles</a></li>
+          <li><a href="/editorial-policy/">Editorial policy</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="s909df4b">Independent crypto coverage, for information only.</p>
+    <p class="s1bc00f0">© 2026 Crypto Record</p>
+  </div>
+</footer>
+</body>
+</html>
